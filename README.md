@@ -31,7 +31,7 @@ Every photo lives in `images/`. To swap one, replace the file and keep the same 
 | `mgmt-pocket-park.jpg` | 1400 × 1050 | Landscape Management | A, B, C, D |
 | `arbor-truck-wide.jpg` | 1400 × 933 | Arbor Resources | A, C, D |
 | `arbor-truck-tall.jpg` | 1000 × 1250 | Arbor Resources | B |
-| `crew-ironwood.jpg` | 1000 × 749 | Careers (hero tile in D) | A, B, C, D |
+| `crew-ironwood.jpg` | 1000 × 1250 (portrait) | Careers (hero tile in D) | A, B, C, D |
 | `imp-install.jpg` | 1000 × 750 | Install column | A |
 | `imp-manage.jpg` | 1000 × 750 | Manage column | A |
 | `imp-protect.jpg` | 1000 × 750 | Protect column | A |
@@ -40,13 +40,16 @@ Every photo lives in `images/`. To swap one, replace the file and keep the same 
 | `work-estrella.jpg` | 1400 × 1050 | Selected work | A, B, C, D |
 | `work-talkingstick.jpg` | 1400 × 1050 | Selected work | A, B, C, D |
 
-Three photos are preview-resolution copies taken from the Verrado shoot (November 2022) in the shared Drive. They are sharp enough for review. For the production site, export from the full-size originals:
+Six photos are preview-resolution copies taken from the Verrado shoot (November 2022) in the shared Drive. They are sharp enough for review. For the production site, export from the full-size originals:
 
 | File | Original in Drive |
 | --- | --- |
 | `mgmt-pocket-park.jpg` | `IMG_4400.jpg` (folder: Verrado4) |
 | `imp-manage.jpg` | `IMG_4549.jpg` (folder: More Verrado) |
 | `imp-protect.jpg` | `IMG_4559.jpg` (folder: Verrado5), right-hand crop |
+| `dev-excavators.jpg` | `IMG_4661.jpg` (folder: Verrado) |
+| `imp-install.jpg` | `IMG_4594.jpg` (folder: More Verrado) |
+| `crew-ironwood.jpg` | `IMG_4597.jpg` (folder: More Verrado) |
 
 If a replacement shows something different, update the `alt` text on that image in each page so the description still matches.
 
