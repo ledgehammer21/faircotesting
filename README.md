@@ -120,6 +120,5 @@ Logos and icons (`logo-landscape-group.png`, `logo-landscape-group-reversed.png`
 Placeholders show in square brackets on the page.
 
 - Crew portrait
-- Photos for Carmel Pacific Ridge and Warner Groves Lake on the Projects page (not on the current site)
 - Open roles on Careers
 - Resume upload on the Careers form
