@@ -79,7 +79,7 @@ No photo appears twice within a direction: each inner page uses its own images, 
 | --- | --- | --- |
 | `dev-hero.jpg` | Landscape Development hero | `IMG_4428.jpg` |
 | `dev-partner.jpg` | Development, partnering section | `IMG_4686.jpg` (Verrado shoot) |
-| `dev-salvage.jpg` | Development, native salvage | `Specimen 72 inch boxed Ironwood.jpg` |
+| `dev-salvage-nss.jpg` | Development, native salvage | `NSS-main.jpg` from the current fairco.ca Landscape Development page (1023 px wide; get the original for production) |
 | `dev-build.jpg` | Development, what we build | `IMG_0270.JPG` (At Work, September 2026) |
 | `dev-handoff.jpg` | Development, after the build | `IMG_0296.JPG` (At Work, September 2026) |
 | `mgmt-band.jpg` | Landscape Management photo band | `IMG_4339.jpg` (Verrado shoot) |
