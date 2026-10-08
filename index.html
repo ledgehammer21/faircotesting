@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Fairco website: homepage directions</title>
+<title>Fairco website: design directions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Jost:wght@400;500;600&display=swap">
@@ -36,6 +36,15 @@ h2{font-family:'Russo One',sans-serif;font-weight:400;font-size:clamp(22px,2.6vw
 .card p{margin:0;color:#333}
 .open{margin-top:auto;padding-top:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:15px}
 .open span{border-bottom:3px solid var(--gold);padding-bottom:2px}
+.inner{border-top:2px solid var(--ink);padding:clamp(40px,6vw,72px) 0}
+.inner > .wrap > p{max-width:66ch;margin:0 0 28px;color:#333}
+.igrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(20px,3vw,32px)}
+.icol{border:2px solid var(--ink);padding:22px 24px 16px}
+h3{font-family:'Russo One',sans-serif;font-weight:400;font-size:22px;line-height:1.15;text-transform:uppercase;margin:4px 0 12px}
+.icol ul{list-style:none;margin:0;padding:0}
+.icol li{border-top:1px solid var(--line)}
+.icol li a{display:flex;align-items:center;min-height:48px;font-weight:600;text-decoration:none}
+.icol li a:hover{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:5px}
 .photos{background:var(--tint);border-top:2px solid var(--ink);padding:clamp(40px,6vw,72px) 0}
 .photos > .wrap > p{max-width:66ch;margin:0 0 28px;color:#333}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:18px}
@@ -59,8 +68,8 @@ footer p{margin:0;color:#E9E4D4}
 
 <main>
   <div class="wrap intro">
-    <h1>Homepage directions</h1>
-    <p>Four design directions for the new Fairco homepage. Each one is a full, responsive page, so narrow the browser window or open it on a phone to see the mobile layout. Copy and photos are working drafts.</p>
+    <h1>Website design directions</h1>
+    <p>Four design directions for the new Fairco homepage, with directions B and C built out to seven inner pages each. Every page is responsive, so narrow the browser window or open it on a phone to see the mobile layout. Copy and photos are working drafts.</p>
   </div>
 
   <div class="wrap grid">
@@ -102,10 +111,21 @@ footer p{margin:0;color:#E9E4D4}
     </a>
   </div>
 
+  <section class="inner" aria-labelledby="inner-h">
+    <div class="wrap">
+      <h2 id="inner-h">Inner pages</h2>
+      <p>Directions B and C are built out as full sites. The navigation on each page is live, so you can click through from the homepage as a visitor would.</p>
+      <div class="igrid">
+        <div class="icol"><span class="letter">Direction B</span><h3>Heritage Patch</h3><ul><li><a href="b.html">Home</a></li><li><a href="b-development.html">Landscape Development</a></li><li><a href="b-management.html">Landscape Management</a></li><li><a href="b-arbor-resources.html">Arbor Resources</a></li><li><a href="b-projects.html">Projects</a></li><li><a href="b-about.html">About</a></li><li><a href="b-careers.html">Careers</a></li><li><a href="b-contact.html">Contact</a></li></ul></div>
+        <div class="icol"><span class="letter">Direction C</span><h3>Brochure Black &amp; Gold</h3><ul><li><a href="c.html">Home</a></li><li><a href="c-development.html">Landscape Development</a></li><li><a href="c-management.html">Landscape Management</a></li><li><a href="c-arbor-resources.html">Arbor Resources</a></li><li><a href="c-projects.html">Projects</a></li><li><a href="c-about.html">About</a></li><li><a href="c-careers.html">Careers</a></li><li><a href="c-contact.html">Contact</a></li></ul></div>
+      </div>
+    </div>
+  </section>
+
   <section class="photos" aria-labelledby="photos-h">
     <div class="wrap">
       <h2 id="photos-h">Photos in use</h2>
-      <p>Every photo on the four pages lives in the <code>images</code> folder. To swap one, replace the file and keep the same file name. Photos are cropped to fit their frame, so a replacement only needs to be the same orientation and at least the size listed.</p>
+      <p>Every photo on these pages lives in the <code>images</code> folder. To swap one, replace the file and keep the same file name. Photos are cropped to fit their frame, so a replacement only needs to be the same orientation and at least the size listed.</p>
       <div class="pgrid">
         <figure><img src="images/hero-boxed-trees.jpg" alt="Loader moving boxed desert trees onto a flatbed"><figcaption><code>hero-boxed-trees.jpg</code>Hero. A, B, C, D<small>2000 × 1125, landscape</small></figcaption></figure>
         <figure><img src="images/dev-excavators.jpg" alt="Wheel loader working a stockpile of landscape rock"><figcaption><code>dev-excavators.jpg</code>Landscape Development. A, B, C, D. Also Careers in D<small>1400 × 1050, landscape</small></figcaption></figure>
