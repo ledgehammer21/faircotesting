@@ -98,6 +98,10 @@ Arbor Resources uses three supplied stock photos: `arbor-lush-hero.jpg`, `arbor-
 
 `reporting-tools.png` (water budget and run-time calculator mockup) sits on the Water Management page.
 
+### Hero video (directions B and C)
+
+`hero-video.mp4` (H.264) and `hero-video.webm` (VP9 fallback) are the 35-second reel from the current fairco.ca homepage (`fairco-intro.mp4`), re-encoded at 1280 px wide with no audio for review. `hero-video-poster.jpg` is its first frame. The video autoplays muted on a loop, the button in the corner pauses and plays it, and it starts paused for visitors who have reduced motion turned on. For production, re-export from the original at 1920 px.
+
 ### Headshots and client logos
 
 - `head-*.jpg`: leadership headshots, square crops at 600 × 600, used on About, Landscape Management and Arbor Resources.
@@ -114,7 +118,6 @@ Logos and icons (`logo-landscape-group.png`, `logo-landscape-group-reversed.png`
 Placeholders show in square brackets on the page.
 
 - Crew portrait
-- Hero video (the pages show a still with a pause control where the video will go)
 - Photos for the ten projects on the Projects page that have none yet
 - Open roles on Careers
 - Resume upload on the Careers form

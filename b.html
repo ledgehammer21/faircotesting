@@ -38,6 +38,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #1A1A1A;outline-offset:3p
 .fb-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;width:100%;margin:0;padding:0;list-style:none}
 @media (max-width:960px){.fb-logos{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:540px){.fb-logos{grid-template-columns:repeat(4,1fr);gap:6px}.fb-logos li{min-height:56px;padding:6px}.fb-logos img{max-height:34px}}
+.hero-toggle .ic-play{display:none}.hero-toggle[data-state=paused] .ic-play{display:block}.hero-toggle[data-state=paused] .ic-pause{display:none}
 </style>
 </head>
 <body>
@@ -68,9 +69,10 @@ Menu
 
 <section style="max-width: 1280px; margin: 0 auto; padding: clamp(24px, 3vw, 40px) clamp(20px, 4vw, 48px) clamp(56px, 6vw, 96px); display: flex; flex-direction: column; align-items: center">
 <div style="position: relative; width: 100%">
-<img src="images/hero-boxed-trees.jpg" alt="A Fairco loader moves boxed desert trees onto a flatbed, with saguaros and mountains behind." style="display: block; width: 100%; aspect-ratio: 21 / 9; min-height: 300px; object-fit: cover; border-radius: clamp(18px, 2.4vw, 32px); border: 2px solid #1A1A1A; box-sizing: border-box">
-<button type="button" aria-label="Pause background video" style="position: absolute; left: 20px; bottom: 20px; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; background: #1A1A1A; border: 2px solid #F5F0E6; border-radius: 999px">
-<svg width="14" height="16" viewBox="0 0 14 16" fill="#F5F0E6" aria-hidden="true"><rect x="0" y="0" width="5" height="16" rx="1"></rect><rect x="9" y="0" width="5" height="16" rx="1"></rect></svg>
+<video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-video-poster.jpg" aria-label="Video of Fairco crews and equipment at work, with aerial views of Arizona communities, parks and streetscapes." style="display: block; width: 100%; aspect-ratio: 21 / 9; min-height: 300px; object-fit: cover; border-radius: clamp(18px, 2.4vw, 32px); border: 2px solid #1A1A1A; box-sizing: border-box"><source src="images/hero-video.mp4" type='video/mp4; codecs="avc1.64001F"'><source src="images/hero-video.webm" type="video/webm"></video>
+<button type="button" class="hero-toggle" data-state="playing" onclick="var v=this.parentNode.querySelector('video');if(v.paused){v.play();this.setAttribute('aria-label','Pause background video');this.setAttribute('data-state','playing')}else{v.pause();this.setAttribute('aria-label','Play background video');this.setAttribute('data-state','paused')}" aria-label="Pause background video" style="position: absolute; left: 20px; bottom: 20px; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; background: #1A1A1A; border: 2px solid #F5F0E6; border-radius: 999px">
+<svg class="ic-pause" width="14" height="16" viewBox="0 0 14 16" fill="#F5F0E6" aria-hidden="true"><rect x="0" y="0" width="5" height="16" rx="1"></rect><rect x="9" y="0" width="5" height="16" rx="1"></rect></svg>
+<svg class="ic-play" width="14" height="16" viewBox="0 0 14 16" fill="#F5F0E6" aria-hidden="true"><path d="M1 0l13 8-13 8z"></path></svg>
 </button>
 <div aria-hidden="true" style="position: absolute; right: clamp(12px, 4vw, 56px); bottom: clamp(-84px, -5vw, -44px); width: clamp(112px, 13vw, 176px); height: clamp(112px, 13vw, 176px)">
 <svg viewBox="0 0 200 200" width="100%" height="100%" style="display: block; position: absolute; inset: 0">
@@ -180,13 +182,13 @@ Menu
 <div style="display: flex; flex-direction: column; gap: 12px; padding: clamp(24px, 2.6vw, 36px); border: 2px dashed #BDAD82; border-radius: 28px">
 <div class="fb-tag" style="color: #BDAD82">No. 1</div>
 <h3 style="margin: 0; font-family: 'Russo One', 'Arial Black', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 44px); line-height: 1.05; letter-spacing: 0.03em; text-transform: uppercase">Install</h3>
-<p style="margin: 0; font-weight: 600; font-size: 19px; color: #FEBC11">We bring the master plan to life.</p>
+<p style="margin: 0; font-weight: 600; font-size: 19px; color: #FEBC11">Do the work right from the start.</p>
 <p style="margin: 0">Build it correctly.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px; padding: clamp(24px, 2.6vw, 36px); border: 2px dashed #BDAD82; border-radius: 28px">
 <div class="fb-tag" style="color: #BDAD82">No. 2</div>
 <h3 style="margin: 0; font-family: 'Russo One', 'Arial Black', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 44px); line-height: 1.05; letter-spacing: 0.03em; text-transform: uppercase">Manage</h3>
-<p style="margin: 0; font-weight: 600; font-size: 19px; color: #FEBC11">Proactive care and planning to improve the performance of your landscape.</p>
+<p style="margin: 0; font-weight: 600; font-size: 19px; color: #FEBC11">Keep the landscape performing, season after season.</p>
 <p style="margin: 0">Operate it proactively.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px; padding: clamp(24px, 2.6vw, 36px); border: 2px dashed #BDAD82; border-radius: 28px">
@@ -299,7 +301,7 @@ Menu
 <div class="fb-tag" style="color: #FFFFFF">Careers</div>
 <h2 style="margin: 0; font-family: 'Russo One', 'Arial Black', sans-serif; font-weight: 400; font-size: clamp(32px, 4.4vw, 64px); line-height: 1.03; text-transform: uppercase">Come build with us.</h2>
 <p style="margin: 0">If you're passionate about landscape infrastructure and committed to excellence in all you do, then we may have a spot for you on our growing team.</p>
-<p style="margin: 0">We live in and around the communities we design and build, so our commitment to excellence isn't just good business. It's personal.</p>
+<p style="margin: 0">We live in and around the communities we build, so our commitment to excellence is personal.</p>
 <a href="b-careers.html" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 30px; margin-top: 8px; background: #FEBC11; color: #1A1A1A; border: 2px solid #1A1A1A; border-radius: 999px; box-shadow: 0 5px 0 #1A1A1A; text-decoration: none; font-weight: 700; font-size: 17px; letter-spacing: 0.04em; text-transform: uppercase">See open roles</a>
 </div>
 <div style="flex: 1 1 440px; min-width: 0; display: grid; grid-template-columns: minmax(0, 420px); justify-content: center; gap: 20px; align-items: center">
@@ -349,12 +351,16 @@ Menu
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 32px; padding-top: 24px; border-top: 1px solid #57503F; font-size: 15px; color: #BDAD82">
-<div>Licensed and bonded. AZ ROC 203472, Class KA &nbsp;/&nbsp; CA 764536 &nbsp;/&nbsp; NV 81926</div>
+<div>Licensed in Arizona, California and Nevada. AZ ROC 203472, Class KA &nbsp;/&nbsp; CA 764536 &nbsp;/&nbsp; NV 81926</div>
 <div>&copy; 2026 Fairco. All rights reserved. &nbsp;/&nbsp; faircolg.com</div>
 </div>
 </div>
 </footer>
 
 </div>
+<script>
+(function(){var v=document.querySelector('.hero-video'),b=document.querySelector('.hero-toggle');
+if(v&&b&&window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();b.setAttribute('data-state','paused');b.setAttribute('aria-label','Play background video');}})();
+</script>
 </body>
 </html>

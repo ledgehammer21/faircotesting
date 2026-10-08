@@ -31,6 +31,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #111111;outline-offset:3p
 .fc-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;width:100%;margin:0;padding:0;list-style:none}
 @media (max-width:960px){.fc-logos{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:540px){.fc-logos{grid-template-columns:repeat(4,1fr);gap:6px}.fc-logos li{min-height:56px;padding:6px}.fc-logos img{max-height:34px}}
+.hero-toggle .ic-play{display:none}.hero-toggle[data-state=paused] .ic-play{display:block}.hero-toggle[data-state=paused] .ic-pause{display:none}
 input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #111111;outline-offset:2px}
 </style>
 </head>
@@ -79,7 +80,7 @@ Menu
 
 <section style="background: #FFFFFF; color: #111111">
 <div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px, 7vw, 104px) clamp(20px, 4vw, 48px); display: flex; flex-direction: column; gap: clamp(28px, 3.5vw, 48px)">
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(36px, 5vw, 80px)"><div style="flex: 1 1 400px; min-width: 0"><img src="images/careers-crew.jpg" alt="Fairco crew members at work on a roadside planting bed beside a material spreader." style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 50%; box-sizing: border-box; border: 6px solid #FEBC11; border-radius: clamp(36px, 5vw, 72px) 0 0 0"></div><div style="flex: 1.1 1 440px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 18px"><div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px"><div style="font-family: 'Russo One', 'Arial Black', sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C4A0F">Company culture</div><h2 style="margin: 0; font-family: 'Russo One', 'Arial Black', sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 50px); line-height: 1.07; letter-spacing: 0.02em; text-transform: uppercase; max-width: 22em">It's personal.</h2><div aria-hidden="true" style="width: 220px; height: 8px; background: #FEBC11"></div></div><p style="margin: 0; max-width: 34em">We live in and around the communities we design and build, so our commitment to excellence isn't just good business. It's personal.</p><p style="margin: 0; max-width: 34em">Fairco is family-owned, and working here is a career on a team that feels like family.</p></div></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(36px, 5vw, 80px)"><div style="flex: 1 1 400px; min-width: 0"><img src="images/careers-crew.jpg" alt="Fairco crew members at work on a roadside planting bed beside a material spreader." style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 50%; box-sizing: border-box; border: 6px solid #FEBC11; border-radius: clamp(36px, 5vw, 72px) 0 0 0"></div><div style="flex: 1.1 1 440px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 18px"><div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px"><div style="font-family: 'Russo One', 'Arial Black', sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C4A0F">Company culture</div><h2 style="margin: 0; font-family: 'Russo One', 'Arial Black', sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 50px); line-height: 1.07; letter-spacing: 0.02em; text-transform: uppercase; max-width: 22em">It's personal.</h2><div aria-hidden="true" style="width: 220px; height: 8px; background: #FEBC11"></div></div><p style="margin: 0; max-width: 34em">We live in and around the communities we build, so our commitment to excellence is personal.</p><p style="margin: 0; max-width: 34em">Fairco is family-owned, and working here is a career on a team that feels like family.</p></div></div>
 </div>
 </section>
 
@@ -119,7 +120,7 @@ Menu
 <div style="max-width: 1280px; margin: 0 auto; padding: clamp(40px, 5vw, 72px) clamp(20px, 4vw, 48px) 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 40px 48px">
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
 <img src="images/logo-landscape-group-reversed.png" alt="Fairco Landscape Group" style="height: 92px; width: auto; display: block">
-<div style="font-family: 'Russo One', 'Arial Black', sans-serif; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #FEBC11">Install. Manage. Protect.</div>
+<div style="font-family: 'Russo One', 'Arial Black', sans-serif; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #FEBC11">Family-owned since 1978</div>
 </div>
 <nav aria-label="Services" style="display: flex; flex-direction: column; gap: 4px">
 <div style="font-family: 'Russo One', 'Arial Black', sans-serif; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #FEBC11; margin-bottom: 6px">Services</div>
@@ -143,7 +144,7 @@ Menu
 </div>
 <div style="background: #2B2B2B">
 <div style="max-width: 1280px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; font-size: 15px; color: #D8CCA8">
-<div>Licensed and bonded. AZ ROC 203472, Class KA &nbsp;/&nbsp; CA 764536 &nbsp;/&nbsp; NV 81926</div>
+<div>Licensed in Arizona, California and Nevada. AZ ROC 203472, Class KA &nbsp;/&nbsp; CA 764536 &nbsp;/&nbsp; NV 81926</div>
 <div>&copy; 2026 Fairco. All rights reserved.</div>
 </div>
 </div>
