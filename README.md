@@ -71,6 +71,31 @@ Six photos are preview-resolution copies taken from the Verrado shoot (November 
 | `imp-install.jpg` | `IMG_4594.jpg` (folder: More Verrado) |
 | `crew-ironwood.jpg` | `IMG_4597.jpg` (folder: More Verrado) |
 
+### Inner-page photos (directions B and C)
+
+No photo appears twice within a direction: each inner page uses its own images, separate from the homepage. Most come from the Verrado shoot (November 2022) at preview resolution (1600 px wide); export production versions from the originals.
+
+| File | Used on | Original |
+| --- | --- | --- |
+| `dev-hero.jpg` | Landscape Development hero | `IMG_4428.jpg` |
+| `dev-partner.jpg` | Development, partnering section | `IMG_4686.jpg` (Verrado shoot) |
+| `dev-salvage.jpg` | Development, native salvage | `Specimen 72 inch boxed Ironwood.jpg` |
+| `dev-build.jpg` | Development, what we build | `IMG_0270.JPG` (At Work, September 2026) |
+| `dev-handoff.jpg` | Development, after the build | `IMG_0296.JPG` (At Work, September 2026) |
+| `mgmt-band.jpg` | Landscape Management photo band | `IMG_4339.jpg` (Verrado shoot) |
+| `maint-hero.jpg`, `maint-list.jpg` | Landscape Maintenance | `IMG_4381.jpg`, `IMG_4536.jpg` |
+| `water-hero.jpg`, `water-list.jpg` | Water Management | `IMG_4368.jpg`, `IMG_4579.jpg` |
+| `phc-hero.jpg`, `phc-list.jpg` | Plant Health Care | `IMG_4545.jpg`, `IMG_4562.jpg` |
+| `enh-hero.jpg`, `enh-list.jpg` | Enhancements | `IMG_4523.jpg`, `IMG_4304.jpg` |
+| `arbor-hero.jpg`, `arbor-standards.jpg`, `arbor-species.jpg` | Arbor Resources | `IMG_4335.jpg`, `IMG_4342.jpg` (left crop), `IMG_4577.jpg` |
+| `proj-hero.jpg` | Projects hero | `IMG_4772.jpg` |
+| `proj-verrado.jpg`, `proj-morrison.jpg`, `proj-estrella.jpg`, `proj-tsr.jpg`, `proj-lakes.jpg` | Projects cards | `DJI_0106.JPG`, `Lakeview Trails.jpg`, `Estrella Newland Community.jpg`, `TSR.jpg`, `Morrison Ranch - Lake - Complete.jpg` |
+| `about-hero.jpg` | About hero | `DJI_0033.JPG` |
+| `careers-hero.jpg`, `careers-crew.jpg` | Careers | `IMG_4707.jpg`, `IMG_4591.jpg` (Verrado shoot) |
+| `contact-hero.jpg` | Contact hero | `DJI_0070.JPG` |
+
+The `imp-*` photos (direction A's homepage) also appear on B and C inner pages: `imp-manage.jpg` and `imp-protect.jpg` on Landscape Management, `imp-install.jpg` on About.
+
 If a replacement shows something different, update the `alt` text on that image in each page so the description still matches.
 
 Logos and icons (`logo-landscape-group.png`, `logo-landscape-group-reversed.png`, `icon-c.png`) are in the same folder. `thumbs/` holds the preview images used on the hub page.
