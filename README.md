@@ -1,6 +1,6 @@
 # Fairco website: design directions
 
-Four design directions for the new Fairco homepage, with directions B and C built out to seven inner pages each, as static HTML for internal review. These are design drafts, not the production site. The live site will be built in WordPress / Beaver Builder.
+Four design directions for the new Fairco homepage, with directions B and C built out as full sites, as static HTML for internal review. These are design drafts, not the production site. The live site will be built in WordPress / Beaver Builder.
 
 ## Pages
 
@@ -19,8 +19,12 @@ Each file exists twice, with a `b-` or `c-` prefix. The navigation in `b.html`, 
 | File | Page |
 | --- | --- |
 | `b-development.html`, `c-development.html` | Landscape Development |
-| `b-management.html`, `c-management.html` | Landscape Management, with sections for Landscape Maintenance, Water Management, Plant Health Care, Enhancements and Arbor Resources |
-| `b-arbor-resources.html`, `c-arbor-resources.html` | Arbor Resources |
+| `b-management.html`, `c-management.html` | Landscape Management overview, linking to each service |
+| `b-landscape-maintenance.html`, `c-landscape-maintenance.html` | Landscape Maintenance (under Management) |
+| `b-water-management.html`, `c-water-management.html` | Water Management (under Management) |
+| `b-plant-health-care.html`, `c-plant-health-care.html` | Plant Health Care (under Management) |
+| `b-enhancements.html`, `c-enhancements.html` | Enhancements (under Management) |
+| `b-arbor-resources.html`, `c-arbor-resources.html` | Arbor Resources (top-level menu item, also listed with the Management services) |
 | `b-projects.html`, `c-projects.html` | Projects |
 | `b-about.html`, `c-about.html` | About |
 | `b-careers.html`, `c-careers.html` | Careers |
@@ -79,8 +83,7 @@ Placeholders show in square brackets on the page.
 - Client testimonial
 - Crew portrait
 - Hero video (the pages show a still with a pause control where the video will go)
-- Leadership headshots, and any leadership beyond the three named on About
+- Leadership headshots
 - Photos for the ten projects on the Projects page that have none yet
 - Open roles on Careers
 - Resume upload on the Careers form
-- Contact email address (domain to be confirmed)
