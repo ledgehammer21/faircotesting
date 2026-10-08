@@ -8,7 +8,7 @@ Four design directions for the new Fairco homepage, with directions B and C buil
 | --- | --- |
 | `index.html` | Review hub with links to every page and a map of the photos in use |
 | `a.html` | A · Field Standard |
-| `b.html` | B · Heritage Patch |
+| `b.html` | B · Heritage Patch (homepage copy is a voice experiment: plainspoken, direct, in the spirit of pinkswindows.com; the inner pages and direction C keep the standard copy) |
 | `c.html` | C · Brochure Black & Gold |
 | `d.html` | D · No. 48 |
 
