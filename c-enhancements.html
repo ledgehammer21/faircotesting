@@ -19,6 +19,16 @@ a{color:#111111}a:hover{color:#111111;text-decoration-color:#FEBC11}
 a:focus-visible,button:focus-visible{outline:3px solid #111111;outline-offset:3px}
 .fc-dark a:focus-visible,.fc-dark button:focus-visible{outline-color:#FEBC11}
 @media (max-width:960px){.fc-nav{display:none}.fc-menu{display:inline-flex}.fc-hide-sm{display:none}}
+.fc-dd{position:relative;display:inline-flex;align-items:center}
+.fc-dd-menu{display:none;position:absolute;top:100%;left:-18px;padding-top:16px;z-index:50}
+.fc-dd:hover .fc-dd-menu,.fc-dd:focus-within .fc-dd-menu{display:block}
+.fc-dd-menu ul{list-style:none;margin:0;padding:8px;min-width:250px;background:#111111;border-top:6px solid #FEBC11;box-shadow:0 12px 28px rgba(0,0,0,.35)}
+.fc-dd-menu a{display:flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;font-weight:500;font-size:16px;white-space:nowrap}
+.fc-dd-menu a:hover,.fc-dd-menu a:focus-visible{background:#262626}
+.fc-dd-menu a[aria-current]{color:#FEBC11}
+.fc-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;width:100%;margin:0;padding:0;list-style:none}
+@media (max-width:960px){.fc-logos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:540px){.fc-logos{grid-template-columns:repeat(2,1fr)}}
 input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #111111;outline-offset:2px}
 </style>
 </head>
@@ -31,7 +41,7 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px soli
 <a href="c.html" aria-label="Fairco Landscape Group, home" style="display: inline-flex"><img src="images/logo-landscape-group-reversed.png" alt="Fairco Landscape Group" style="height: 72px; width: auto; display: block"></a>
 <nav class="fc-nav" aria-label="Primary">
 <a href="c-development.html" style="text-decoration: none; font-weight: 500; font-size: 17px">Development</a>
-<a href="c-management.html" aria-current="true" style="font-weight: 700; font-size: 17px; text-decoration: underline; text-decoration-color: #FEBC11; text-decoration-thickness: 3px; text-underline-offset: 8px">Management</a>
+<div class="fc-dd"><a href="c-management.html" aria-current="true" style="font-weight: 700; font-size: 17px; text-decoration: underline; text-decoration-color: #FEBC11; text-decoration-thickness: 3px; text-underline-offset: 8px">Management<svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 7px"><path d="M1 1.5l5 5 5-5"></path></svg></a><div class="fc-dd-menu"><ul aria-label="Landscape Management services"><li><a href="c-landscape-maintenance.html" data-sub="maintenance">Landscape Maintenance</a></li><li><a href="c-water-management.html" data-sub="water">Water Management</a></li><li><a href="c-plant-health-care.html" data-sub="phc">Plant Health Care</a></li><li><a href="c-enhancements.html" data-sub="enhancements" aria-current="page">Enhancements</a></li></ul></div></div>
 <a href="c-arbor-resources.html" style="text-decoration: none; font-weight: 500; font-size: 17px">Arbor Resources</a>
 <a href="c-projects.html" style="text-decoration: none; font-weight: 500; font-size: 17px">Projects</a>
 <a href="c-about.html" style="text-decoration: none; font-weight: 500; font-size: 17px">About</a>

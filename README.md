@@ -94,6 +94,15 @@ No photo appears twice within a direction: each inner page uses its own images, 
 | `careers-hero.jpg`, `careers-crew.jpg` | Careers | `IMG_4707.jpg`, `IMG_4591.jpg` (Verrado shoot) |
 | `contact-hero.jpg` | Contact hero | `DJI_0070.JPG` |
 
+Arbor Resources uses three supplied stock photos: `arbor-lush-hero.jpg`, `arbor-lush-street.jpg` and `arbor-lush-groves.jpg` (the Highland Groves at Morrison Ranch entry). Confirm the stock license before launch; these are 736 to 1024 px wide, so source larger files for production. `arbor-hero.jpg`, `arbor-standards.jpg` and `arbor-species.jpg` are no longer used.
+
+`reporting-tools.png` (water budget and run-time calculator mockup) sits on the Water Management page.
+
+### Headshots and client logos
+
+- `head-*.jpg`: leadership headshots, square crops at 600 × 600, used on About, Landscape Management and Arbor Resources.
+- `logo-*.png`: the 20 client logos from the current fairco.ca homepage, captured at the size that site serves them. Request original vector or high-resolution files from each client, or from whoever built fairco.ca, before launch.
+
 The `imp-*` photos (direction A's homepage) also appear on B and C inner pages: `imp-manage.jpg` and `imp-protect.jpg` on Landscape Management, `imp-install.jpg` on About.
 
 If a replacement shows something different, update the `alt` text on that image in each page so the description still matches.
@@ -104,11 +113,8 @@ Logos and icons (`logo-landscape-group.png`, `logo-landscape-group-reversed.png`
 
 Placeholders show in square brackets on the page.
 
-- Client logos
-- Client testimonial
 - Crew portrait
 - Hero video (the pages show a still with a pause control where the video will go)
-- Leadership headshots
 - Photos for the ten projects on the Projects page that have none yet
 - Open roles on Careers
 - Resume upload on the Careers form
