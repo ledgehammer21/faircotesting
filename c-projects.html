@@ -26,9 +26,11 @@ a:focus-visible,button:focus-visible{outline:3px solid #111111;outline-offset:3p
 .fc-dd-menu a{display:flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;font-weight:500;font-size:16px;white-space:nowrap}
 .fc-dd-menu a:hover,.fc-dd-menu a:focus-visible{background:#262626}
 .fc-dd-menu a[aria-current]{color:#FEBC11}
+.fc-logos li{display:flex;align-items:center;justify-content:center;min-height:96px;padding:14px 16px;box-sizing:border-box}
+.fc-logos img{display:block;max-width:100%;max-height:62px;width:auto;height:auto}
 .fc-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;width:100%;margin:0;padding:0;list-style:none}
 @media (max-width:960px){.fc-logos{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:540px){.fc-logos{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.fc-logos{grid-template-columns:repeat(4,1fr);gap:6px}.fc-logos li{min-height:56px;padding:6px}.fc-logos img{max-height:34px}}
 input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #111111;outline-offset:2px}
 </style>
 </head>
