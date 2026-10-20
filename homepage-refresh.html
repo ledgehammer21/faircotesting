@@ -50,18 +50,15 @@ a{color:#0D0D0D}a:hover{color:#5A4300}
 .fcols{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:40px}
 .fcols a{color:#E9E9E9;text-decoration:none}
 .fcols a:hover{color:#FEBC11}
-.svc{display:flex;flex-direction:column;gap:32px}
-.srow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#FFFFFF}
-.srow.flip .rimg{order:2}
-.rimg img{width:100%;height:100%;min-height:440px;object-fit:cover;display:block}
-.rtext{padding:52px 56px;display:flex;flex-direction:column;gap:16px;min-width:0}
-.subs-label{font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:#5E5E5E;margin-top:6px}
+.svc{display:flex;flex-direction:column;gap:80px}
+.split.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+@media (max-width:900px){.split.rev{grid-template-columns:minmax(0,1fr)}}
+.inl a{color:#0D0D0D;font-weight:700;text-decoration:underline;text-decoration-color:#FEBC11;text-decoration-thickness:2px;text-underline-offset:4px}
+.inl a:hover{color:#5A4300;text-decoration-color:#0D0D0D}
 .subs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
 .subs li{border-top:1px solid #DDD6C3}
 .subs a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;min-height:44px;box-sizing:border-box;text-decoration:none;font-size:15px;font-weight:700;color:#0D0D0D}
 .subs a span{color:#B07D00;font-weight:400}
-.subs a:hover{color:#5A4300}
-@media (max-width:820px){.srow{grid-template-columns:minmax(0,1fr)}.srow.flip .rimg{order:0}.rimg img{min-height:0;height:260px}.rtext{padding:30px 24px}}
 @media (max-width:480px){.subs{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:900px){
 .fork,.split,.stats,.people,.proj,.fcols{grid-template-columns:minmax(0,1fr)}
@@ -114,44 +111,41 @@ a{color:#0D0D0D}a:hover{color:#5A4300}
 
 <!-- NEW: audience fork -->
 <div class="sec" style="background: #F2F2F2;">
-<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 44px;">
+<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 56px;">
 <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center;">
 <h2 style="font-size: 36px;">One company. One standard.</h2>
 <div class="tline"></div>
 <p style="max-width: 640px;">Tell us where your landscape is in its life, and we'll connect you with the team that runs that work.</p>
 </div>
 <div class="svc">
-<div class="srow">
-<div class="rimg"><img src="images/dev-excavators.jpg" alt="Fairco wheel loader working a stockpile of landscape rock, with desert mountains behind"></div>
-<div class="rtext">
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #6E5300;">For developers &amp; homebuilders</span>
-<h3 style="font-size: 32px; line-height: 1.2;">Landscape Development</h3>
-<p>Landscape construction and project management for master-planned communities, multifamily, resorts, military housing and parks. Developers and homebuilders across three states have trusted that work to Fairco since 1978.</p>
-<span class="subs-label">Services</span>
-<ul class="subs"><li><a href="#">Pre-Construction<span aria-hidden="true">→</span></a></li><li><a href="#">Landscape Construction<span aria-hidden="true">→</span></a></li><li><a href="#">Project Management<span aria-hidden="true">→</span></a></li><li><a href="#">Native Salvage<span aria-hidden="true">→</span></a></li></ul>
-<div style="padding-top: 10px;"><a class="btn" href="#">Explore Landscape Development</a></div>
+<div class="split">
+<div class="imgcol"><img src="images/dev-excavators.jpg" alt="A Fairco wheel loader working a stockpile of landscape rock, with desert mountains behind"></div>
+<div class="overcard ol-left">
+<h3 style="font-size: 34px; line-height: 1.2;">Landscape Development</h3>
+<div class="tline"></div>
+<p>Developers and homebuilders bring Fairco in to build the landscape: construction and project management for master-planned communities, multifamily, resorts, military housing and parks. Builders across three states have trusted that work to Fairco since 1978.</p>
+<p class="inl">Services include <a href="#">pre-construction</a>, <a href="#">landscape construction</a>, <a href="#">project management</a> and <a href="#">native salvage</a>.</p>
+<div><a class="btn" href="#">Explore Landscape Development</a></div>
 </div>
 </div>
-<div class="srow flip">
-<div class="rimg"><img src="images/mgmt-pocket-park.jpg" alt="A neighborhood pocket park with turf, desert trees, a ramada and a fire pit seating area"></div>
-<div class="rtext">
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #6E5300;">For HOAs &amp; property managers</span>
-<h3 style="font-size: 32px; line-height: 1.2;">Landscape Management</h3>
-<p>Recurring care for the communities and commercial properties you answer for. The same stewards work your property every visit, and we manage every account against a water budget you can see month to month.</p>
-<span class="subs-label">Services</span>
-<ul class="subs"><li><a href="#">Landscape Maintenance<span aria-hidden="true">→</span></a></li><li><a href="#">Water Management<span aria-hidden="true">→</span></a></li><li><a href="#">Plant Health Care<span aria-hidden="true">→</span></a></li><li><a href="#">Enhancements<span aria-hidden="true">→</span></a></li></ul>
-<div style="padding-top: 10px;"><a class="btn" href="#">Explore Landscape Management</a></div>
+<div class="split rev">
+<div class="overcard ol-right">
+<h3 style="font-size: 34px; line-height: 1.2;">Landscape Management</h3>
+<div class="tline"></div>
+<p>Recurring care for HOAs, property managers and the commercial properties they answer for. The same stewards work your property every visit, and we manage every account against a water budget you can see month to month.</p>
+<p class="inl">Services include <a href="#">landscape maintenance</a>, <a href="#">water management</a>, <a href="#">plant health care</a> and <a href="#">enhancements</a>.</p>
+<div><a class="btn" href="#">Explore Landscape Management</a></div>
 </div>
+<div class="imgcol"><img src="images/mgmt-pocket-park.jpg" alt="A neighborhood pocket park with turf, desert trees, a ramada and a fire pit seating area"></div>
 </div>
-<div class="srow">
-<div class="rimg"><img src="images/arbor-truck-wide.jpg" alt="The side of a white Fairco Arbor Resources truck showing the palm icon and gold stripe"></div>
-<div class="rtext">
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #6E5300;">For established communities</span>
-<h3 style="font-size: 32px; line-height: 1.2;">Arbor Resources</h3>
-<p>Your trees are an asset. ISA Certified Arborists inventory and assess each one with GIS mapping and prune every species on its own clock.</p>
-<span class="subs-label">Services</span>
-<ul class="subs"><li><a href="#">Tree Inventory<span aria-hidden="true">→</span></a></li><li><a href="#">Risk Assessment<span aria-hidden="true">→</span></a></li><li><a href="#">Structural Pruning<span aria-hidden="true">→</span></a></li><li><a href="#">Storm-Damage Cleanup<span aria-hidden="true">→</span></a></li></ul>
-<div style="padding-top: 10px;"><a class="btn" href="#">Explore Arbor Resources</a></div>
+<div class="split">
+<div class="imgcol"><img src="images/arbor-truck-wide.jpg" alt="The side of a white Fairco Arbor Resources truck showing the palm icon and gold stripe"></div>
+<div class="overcard ol-left">
+<h3 style="font-size: 34px; line-height: 1.2;">Arbor Resources</h3>
+<div class="tline"></div>
+<p>Your trees are an asset. Our ISA Certified Arborists care for them across established communities and commercial properties, inventorying each tree with GIS mapping and pruning every species on its own clock.</p>
+<p class="inl">Services include <a href="#">tree inventory</a>, <a href="#">risk assessment</a>, <a href="#">structural pruning</a> and <a href="#">storm-damage cleanup</a>.</p>
+<div><a class="btn" href="#">Explore Arbor Resources</a></div>
 </div>
 </div>
 </div>
@@ -159,7 +153,7 @@ a{color:#0D0D0D}a:hover{color:#5A4300}
 </div>
 
 <!-- About Us (existing layout, copy revised) -->
-<div class="sec" style="background: #F2F2F2;">
+<div class="sec" style="background: #FFFFFF;">
 
 <div class="wrap" style="padding-block: 96px;">
 <div class="split">
