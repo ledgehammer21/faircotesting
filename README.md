@@ -30,7 +30,16 @@ Each file exists twice, with a `b-` or `c-` prefix. The navigation in `b.html`, 
 | `b-careers.html`, `c-careers.html` | Careers |
 | `b-contact.html`, `c-contact.html` | Contact |
 
-The forms on Careers and Contact are design mockups and do not send anything.
+### Blog (direction C only)
+
+| File | Page |
+| --- | --- |
+| `c-blog.html` | Blog index: category filters, featured post, latest posts, email signup |
+| `c-blog-fall-planting-season.html` | Sample article page |
+
+`c.html` also has a "Notes from the field" strip with the three newest posts, and Blog is in the C nav and footer. The five posts are sample topics with draft excerpts for Fairco to approve; only the fall planting article is written out, and every post card links to it. The category filters and share links are not wired up.
+
+The forms on Careers, Contact and the blog signup are design mockups and do not send anything.
 
 Every page is responsive. Narrow the browser window or open it on a phone to see the mobile layout.
 
