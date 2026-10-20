@@ -12,6 +12,12 @@ Four design directions for the new Fairco homepage, with directions B and C buil
 | `c.html` | C · Brochure Black & Gold |
 | `d.html` | D · No. 48 |
 
+## Current-site homepage refresh
+
+`homepage-refresh.html` is a proposed update to the homepage of the current site (fairco.ca), separate from the redesign directions above. It keeps the existing site's styling and layout and adds Landscape Management and Arbor Resources. The intro video is the one on the live homepage.
+
+New images for this page: `refresh-logo-current.png`, `refresh-proj-communities.jpg`, `refresh-proj-resorts.jpg`, `refresh-proj-parks.jpg`. Everything else reuses files already in `images/`.
+
 ### Inner pages (directions B and C)
 
 Each file exists twice, with a `b-` or `c-` prefix. The navigation in `b.html`, `c.html` and every inner page is live.
