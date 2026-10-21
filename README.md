@@ -16,7 +16,7 @@ Four design directions for the new Fairco homepage, with directions B and C buil
 
 `homepage-refresh.html` is a proposed update to the homepage of the current site (fairco.ca), separate from the redesign directions above. It keeps the existing site's styling and layout and adds Landscape Management and Arbor Resources. The intro video is the one on the live homepage.
 
-New images for this page: `refresh-logo-current.png`, `refresh-proj-communities.jpg`, `refresh-proj-resorts.jpg`, `refresh-proj-parks.jpg`, and `logo-howard-hughes-2x.png` (a sharper Howard Hughes logo rendered from the live site's vector file). Everything else reuses files already in `images/`. Client logos are sized by visual weight on this page, so each logo has its own width in the HTML.
+New images for this page: `refresh-logo-current.png`, `refresh-logo-reversed.png` (footer), `refresh-proj-communities.jpg`, `refresh-proj-resorts.jpg`, `refresh-proj-parks.jpg`, and `logo-howard-hughes-2x.png` (a sharper Howard Hughes logo rendered from the live site's vector file). Everything else reuses files already in `images/`. Client logos are sized by visual weight on this page, so each logo has its own width in the HTML.
 
 ### Inner pages (directions B and C)
 
