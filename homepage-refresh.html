@@ -103,6 +103,22 @@ img{max-width:100%}
 .fcols a{color:#E9E9E9;text-decoration:none}
 .fcols a:hover{color:#FEBC11}
 .fcols a.sub{padding-left:14px;font-size:14px;color:#C9C9C9}
+.story{position:relative;color:#FFFFFF;background:#1A1A1A;overflow:hidden}
+.story>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.story .shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,12,12,.92) 0%,rgba(12,12,12,.55) 48%,rgba(12,12,12,.25) 100%),linear-gradient(90deg,rgba(12,12,12,.7) 0%,rgba(12,12,12,0) 70%)}
+.story .wrap{position:relative;padding-block:120px 72px;display:flex;flex-direction:column;gap:96px}
+.story h2,.story h3{color:#FFFFFF}
+.story .lead{max-width:660px;display:flex;flex-direction:column;gap:18px}
+.story .tl li::before{border-color:#1A1A1A;box-shadow:none}
+.story .tl p{color:#ECECEC}
+.vp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:72px;align-items:center}
+.vp img{width:100%;height:640px;object-fit:cover;display:block}
+.fairband{background:#FEBC11}
+.fairrow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px}
+.fairrow li{display:flex;flex-direction:column;gap:8px;min-width:0}
+.fairrow .lt{font-family:Poppins,Arial,sans-serif;font-weight:600;font-size:104px;line-height:.85;color:#0D0D0D}
+.fairrow strong{font-family:Poppins,Arial,sans-serif;font-weight:500;font-size:21px;padding-top:12px;border-top:2px solid #0D0D0D}
+.fairrow p{color:#2A2100;font-size:16px}
 @media (max-width:1100px){.navlinks{display:none}.menu{display:inline-flex}}
 @media (max-width:900px){
 .split,.split.rev,.stats,.two,.svclist,.curr,.proj,.people,.people.four,.fcols,.comm{grid-template-columns:minmax(0,1fr)}
@@ -112,10 +128,16 @@ img{max-width:100%}
 .overcard,.band .bcard{padding:30px 24px}
 .band img{height:340px}
 .band .bcard{position:relative;top:auto;transform:none;width:auto;left:auto!important;right:auto!important;margin:-60px 16px 0}
-.tl{grid-template-columns:minmax(0,1fr);border-top:0;border-left:3px solid #FEBC11;gap:28px;padding-left:28px;margin-left:10px}
+.fp .tl{grid-template-columns:minmax(0,1fr);border-top:0;border-left:3px solid #FEBC11;gap:28px;padding-left:28px;margin-left:10px}
 .ctah{font-size:24px}
 .tl li{padding-top:0}
 .tl li::before{top:6px;left:-39px}
+.vp{grid-template-columns:minmax(0,1fr);gap:40px}
+.vp img{height:340px}
+.fairrow{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px}
+.fairrow .lt{font-size:72px}
+.story .wrap{padding-block:72px 56px;gap:64px}
+.story .shade{background:rgba(12,12,12,.78)}
 .logos{grid-template-columns:repeat(3,minmax(0,1fr))}
 .people{grid-template-columns:repeat(2,minmax(0,1fr))}
 .people.four{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -152,54 +174,45 @@ img{max-width:100%}
 <p style="font-size: 18px; max-width: 760px; color: #2A2100;">Fairco Landscape Group brings Landscape Development and Landscape Management together under one family-owned company. Since 1978.</p>
 </div>
 </div>
-<div style="background: #F2F2F2;">
-<div class="wrap" style="padding-block: 96px;">
-<div class="split">
-<div class="imgcol"><img src="images/work-morrison.jpg" alt="A Fairco-built community lake at Morrison Ranch at dusk, with palms reflected in the water"></div>
-<div class="overcard ol-left">
-<h2 style="font-size: 34px;">Fairco Landscape Group</h2>
+<div class="story" id="our-story">
+<img src="images/work-morrison.jpg" alt="A Fairco-built community lake at Morrison Ranch at dusk, with palms reflected in the water">
+<div class="shade"></div>
+<div class="wrap">
+<div class="lead">
+<h2 style="font-size: clamp(34px, 4vw, 48px); line-height: 1.15;">Fairco Landscape Group</h2>
 <div class="tline"></div>
-<p>Fairco Landscape Group is the parent company of Fairco Landscape Development and Fairco Landscape Management. We're family-owned and licensed in Arizona, California and Nevada, with our headquarters in Phoenix, an operations center in Litchfield Park and an office in San Diego.</p>
-<p>We stand for work that holds up. Our crews self-perform the landscape and irrigation work, our safety record runs at a 0.66 EMR against an industry standard of 1.0, and the people who started projects with us decades ago are still on them today.</p>
+<p>Fairco Landscape Group is the parent company of Fairco Landscape Development and Fairco Landscape Management, and it is still the family-owned company Gene Bearinger started in 1978.</p>
+<p>For most of those years, our crews have built the irrigation, lakes, parks and streetscapes behind the Southwest's master-planned communities, and the people who started those projects are still on them. Those communities need care for decades after the build crews leave. Fairco Landscape Group is our next chapter: one company for the life of the landscape, from the first site walk through long-term management.</p>
 </div>
-</div>
-</div>
-</div>
-<div style="background: #FFFFFF;">
-<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 64px;">
-<div class="two">
-<div class="col">
-<h2 id="our-story" style="font-size: 36px;">Our Story</h2>
-<div class="tline"></div>
-</div>
-<div class="col">
-<p>Gene Bearinger founded Fairco in 1978, and the company has stayed under the same family ownership ever since. For most of those years, our work has been building landscape infrastructure for the developers and homebuilders behind the Southwest's master-planned communities: irrigation mainlines, lakes and pump stations, parks, streetscapes and the planting that ties them together.</p>
-<p>Those communities need care for decades after the build crews leave. Fairco Landscape Group is our next chapter: the same family ownership and the same standard, now covering the life of a landscape from the first site walk through long-term management.</p>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 40px;">
-<h3 style="font-size: 26px;">Since 1978</h3>
+<div style="display: flex; flex-direction: column; gap: 36px;">
+<h3 style="font-size: 24px;">Since 1978</h3>
 <ul class="tl"><li><span class="yr">1978</span><p>Gene Bearinger founds Fairco. It has been family-owned ever since.</p></li><li><span class="yr">2000s</span><p>Work begins at Verrado and Morrison Ranch, two master-planned communities Fairco would build for more than 20 years.</p></li><li><span class="yr">2020s</span><p>Fairco delivers the first parcels and community parks at Teravalis for Howard Hughes.</p></li><li><span class="yr">2026</span><p>Fairco becomes Fairco Landscape Group, with Landscape Development and Landscape Management under one name.</p></li></ul>
 </div>
 </div>
 </div>
-<div style="background: #F2F2F2;">
+<div style="background: #FFFFFF;">
 <div class="wrap" style="padding-block: 96px;">
-<div class="two">
+<div class="vp">
+<img src="images/crew-ironwood.jpg" alt="A Fairco crew member in a high-visibility shirt sets a young tree while a teammate works the bed behind him">
+<div style="display: flex; flex-direction: column; gap: 48px; min-width: 0;">
 <div class="col">
 <h2 style="font-size: 34px;">Our Vision</h2>
 <div class="tline"></div>
-<p>Building a landscape and maintaining it usually fall to two different companies. When something goes wrong between installation and upkeep, each one points at the other.</p>
-<p>Fairco Landscape Group puts both under one name and one standard. The team managing your property can call the team that built it, and nobody has a reason to pass the blame.</p>
+<p>Building a landscape and maintaining it usually fall to two different companies. When something goes wrong between installation and upkeep, each one points at the other. Fairco Landscape Group puts both under one name and one standard, so the team managing your property can call the team that built it.</p>
 </div>
 <div class="col">
 <h2 style="font-size: 34px;">Our Philosophy</h2>
 <div class="tline"></div>
 <p>We treat every landscape as an investment that has to perform for decades. We develop it to last, manage it the way an owner would, enhance it as the property's needs change, and protect what took years to grow.</p>
-<p>Every job runs on the FAIR system:</p>
-<ul class="fair"><li><strong>Flexible</strong><span>We adapt to the site, the community and the client.</span></li><li><strong>Approachable</strong><span>We speak plainly and explain the technical without talking down.</span></li><li><strong>Integrity</strong><span>We say what's true, including the hard realities.</span></li><li><strong>Respect</strong><span>For the land, the resident, the property manager and your time.</span></li></ul>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="fairband">
+<div class="wrap" style="padding-block: 64px; display: flex; flex-direction: column; gap: 36px;">
+<h2 style="font-size: 28px;">Every job runs on the FAIR system</h2>
+<ul class="fairrow"><li><span class="lt" aria-hidden="true">F</span><strong>Flexible</strong><p>We adapt to the site, the community and the client.</p></li><li><span class="lt" aria-hidden="true">A</span><strong>Approachable</strong><p>We speak plainly and explain the technical without talking down.</p></li><li><span class="lt" aria-hidden="true">I</span><strong>Integrity</strong><p>We say what's true, including the hard realities.</p></li><li><span class="lt" aria-hidden="true">R</span><strong>Respect</strong><p>For the land, the resident, the property manager and your time.</p></li></ul>
 </div>
 </div>
 <div style="background: #FFFFFF; padding-block: 96px; display: flex; flex-direction: column; gap: 56px;">
