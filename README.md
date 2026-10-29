@@ -12,11 +12,17 @@ Four design directions for the new Fairco homepage, with directions B and C buil
 | `c.html` | C · Brochure Black & Gold |
 | `d.html` | D · No. 48 |
 
-## Current-site homepage refresh
+## Current-site refresh (fairco.ca)
 
-`homepage-refresh.html` is a proposed update to the homepage of the current site (fairco.ca), separate from the redesign directions above. It keeps the existing site's styling and layout and adds Landscape Management and Arbor Resources. The intro video is the one on the live homepage.
+Three linked pages that update the current site (fairco.ca) in its existing styling, separate from the redesign directions above. They follow the client's October feedback: Fairco Landscape Group as the parent company, and two divisions.
 
-New images for this page: `refresh-logo-current.png`, `refresh-logo-reversed.png` (footer), `refresh-proj-communities.jpg`, `refresh-proj-resorts.jpg`, `refresh-proj-parks.jpg`, and `logo-howard-hughes-2x.png` (a sharper Howard Hughes logo rendered from the live site's vector file). Everything else reuses files already in `images/`. Client logos are sized by visual weight on this page, so each logo has its own width in the HTML.
+| File | Page |
+| --- | --- |
+| `homepage-refresh.html` | Homepage: Fairco Landscape Group, Our Story, Since 1978 timeline, Vision, Philosophy, the two divisions |
+| `refresh-landscape-development.html` | Landscape Development: intro, services, current projects, portfolio, development team, testimonials |
+| `refresh-landscape-management.html` | Landscape Management: intro, five services (Maintenance, Arbor Resources, PHC, Irrigation &amp; Water Management, Enhancements), reporting, leadership, educational resources |
+
+The main menu (Home, Our Story, Landscape Development, Landscape Management, Meet Our Team, Careers, Contact Us) links between these three pages; Meet Our Team, Careers and Contact Us are not built yet. Images reuse files in `images/`, plus `refresh-logo-reversed.png`, `logo-howard-hughes-2x.png` and the `refresh-proj-*` files. Client logos have individual widths in the HTML so they carry similar visual weight.
 
 ### Inner pages (directions B and C)
 

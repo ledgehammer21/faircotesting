@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Landscape Management | Fairco Landscape Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&amp;family=Poppins:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F2F2F2}
+a{color:#0D0D0D}a:hover{color:#5A4300}
+a:focus-visible,button:focus-visible{outline:3px solid #0D0D0D;outline-offset:3px}
+*{box-sizing:border-box}
+img{max-width:100%}
+.fp{font-family:Lato,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.5;letter-spacing:.3px;color:#0D0D0D;background:#FFFFFF}
+.fp h1,.fp h2,.fp h3,.fp h4{font-family:Poppins,"Helvetica Neue",Arial,sans-serif;font-weight:400;color:#020001;margin:0;text-wrap:balance}
+.fp p{margin:0}
+.fp ul{margin:0;padding:0;list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#FEBC11;color:#0D0D0D;font-weight:700;font-size:16px;text-decoration:none;padding:13px 26px;border-radius:3px;min-height:44px}
+.btn:hover{background:#E5A800;color:#0D0D0D}
+.btn.ghost{background:#FFFFFF;border:1px solid #0D0D0D}
+.btn.ghost:hover{background:#0D0D0D;color:#FFFFFF}
+.tline{width:56px;height:3px;background:#FEBC11}
+.ctah{font-size:30px;line-height:1.25}
+.head{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.head p{max-width:700px}
+.navlinks{display:flex;gap:26px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.navlinks a{text-decoration:none;font-family:Poppins,Arial,sans-serif;font-size:15px;color:#0D0D0D;padding-block:6px;border-bottom:2px solid transparent}
+.navlinks a:hover{border-bottom-color:#FEBC11}
+.navlinks a.on{border-bottom-color:#FEBC11;font-weight:500}
+.menu{display:none;align-items:center;gap:8px;background:#FFFFFF;border:1px solid #0D0D0D;border-radius:3px;font:700 15px Lato,Arial,sans-serif;padding:10px 16px;min-height:44px;color:#0D0D0D}
+.crumbs{display:flex;gap:10px;align-items:center;font-size:15px;color:#FFFFFF}
+.crumbs a{color:#FFFFFF;text-decoration:none}
+.crumbs span{color:#FEBC11}
+.split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
+.split.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+.split img{width:100%;height:560px;object-fit:cover;display:block}
+.overcard{background:#FFFFFF;padding:52px;box-shadow:0 4px 24px rgba(0,0,0,.08);display:flex;flex-direction:column;gap:20px;min-width:0}
+.ol-left{margin-left:-110px}
+.ol-right{margin-right:-110px;position:relative;z-index:2}
+.stack{display:flex;flex-direction:column;gap:80px}
+.inl a{color:#0D0D0D;font-weight:700;text-decoration:underline;text-decoration-color:#FEBC11;text-decoration-thickness:2px;text-underline-offset:4px}
+.inl a:hover{color:#5A4300;text-decoration-color:#0D0D0D}
+.band{position:relative;width:100%;max-width:1440px;margin:0 auto}
+.band img{width:100%;height:640px;object-fit:cover;display:block}
+.band .bcard{position:absolute;top:50%;transform:translateY(-50%);width:min(500px,44%);background:#FFFFFF;padding:52px;display:flex;flex-direction:column;gap:20px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
+.band.l .bcard{left:max(24px,calc(50% - 590px))}
+.band.r .bcard{right:max(24px,calc(50% - 590px))}
+.tl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;border-top:3px solid #FEBC11;padding-top:0}
+.tl li{position:relative;padding-top:34px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.tl li::before{content:"";position:absolute;top:-10px;left:0;width:17px;height:17px;border-radius:50%;background:#FEBC11;border:3px solid #FFFFFF;box-shadow:0 0 0 1px #E5A800}
+.tl .yr{font-family:Poppins,Arial,sans-serif;font-size:34px;line-height:1;font-weight:500}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px}
+.col{display:flex;flex-direction:column;gap:18px;min-width:0}
+.fair li{display:grid;grid-template-columns:140px minmax(0,1fr);gap:16px;padding-block:14px;border-top:1px solid #DDD6C3}
+.fair li strong{font-family:Poppins,Arial,sans-serif;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.stat{display:flex;flex-direction:column;gap:6px;border-left:1px solid #3A3A3A;padding-left:22px}
+.stat b{font-family:Poppins,Arial,sans-serif;font-weight:400;font-size:38px;white-space:nowrap;color:#FEBC11;line-height:1;font-variant-numeric:tabular-nums}
+.svclist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px}
+.svclist li{border-top:1px solid #DDD6C3;padding-block:22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.svclist h3{font-size:20px}
+.curr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.curr article{background:#FFFFFF;display:flex;flex-direction:column;min-width:0}
+.curr img,.curr .ph{width:100%;height:380px;object-fit:cover}
+.curr img{display:block}
+.curr .txt{padding:32px;display:flex;flex-direction:column;gap:10px}
+.meta{font-size:14px;font-weight:700;letter-spacing:.6px;color:#6E5300}
+.ph{background:#E6E0CF;display:flex;align-items:center;justify-content:center;color:#5E5440;font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-align:center;padding:16px}
+.proj{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.pcard{position:relative;height:400px;overflow:hidden}
+.pcard img{width:100%;height:100%;object-fit:cover;display:block}
+.pcard .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.8) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:28px;gap:6px;color:#FFFFFF}
+.pcard h3{color:#FFFFFF;font-size:22px}
+.pcard .loc{font-size:14px;font-weight:700;color:#FEBC11;letter-spacing:.4px}
+.people{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.people.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.person{background:#F2F2F2;display:flex;flex-direction:column;min-width:0}
+.person img,.person .ph{width:100%;aspect-ratio:1/1;height:auto;object-fit:cover}
+.person img{display:block}
+.person .txt{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px}
+.person h3{font-size:20px}
+.person .ttl{font-size:14px;font-weight:700;color:#6E5300}
+.person p{font-size:15px}
+.quote{background:#F2F2F2;padding:48px 56px;display:flex;flex-direction:column;gap:20px}
+.quote p.q{font-style:italic;font-size:19px;line-height:1.65}
+.inc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.inc li{border-top:1px solid #DDD6C3;padding-block:9px;font-size:15px}
+.tag{font-family:Poppins,Arial,sans-serif;font-size:18px;font-weight:500;color:#3A3A3A}
+.comm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px}
+.comm li{border-top:1px solid #DDD6C3;padding-block:22px;display:flex;flex-direction:column;gap:6px}
+.comm h3{font-size:20px}
+.res li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;border-top:1px solid #DDD6C3;padding-block:18px}
+.res li:last-child{border-bottom:1px solid #DDD6C3}
+.res .t{font-weight:700;font-size:17px}
+.res .s{font-size:15px;color:#4A4A4A}
+.res a{font-weight:700;white-space:nowrap;text-decoration:underline;text-decoration-color:#FEBC11;text-decoration-thickness:2px;text-underline-offset:4px;color:#0D0D0D}
+.logos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.logo{height:96px;background:#FFFFFF;border:1px solid #E7E7E7;display:flex;align-items:center;justify-content:center;padding:0 8px}
+.fcols{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:40px}
+.fcols a{color:#E9E9E9;text-decoration:none}
+.fcols a:hover{color:#FEBC11}
+.fcols a.sub{padding-left:14px;font-size:14px;color:#C9C9C9}
+@media (max-width:1100px){.navlinks{display:none}.menu{display:inline-flex}}
+@media (max-width:900px){
+.split,.split.rev,.stats,.two,.svclist,.curr,.proj,.people,.people.four,.fcols,.comm{grid-template-columns:minmax(0,1fr)}
+.split.rev .imgcol{order:-1}
+.split img{height:320px}
+.ol-left,.ol-right{margin:-60px 16px 0}
+.overcard,.band .bcard{padding:30px 24px}
+.band img{height:340px}
+.band .bcard{position:relative;top:auto;transform:none;width:auto;left:auto!important;right:auto!important;margin:-60px 16px 0}
+.tl{grid-template-columns:minmax(0,1fr);border-top:0;border-left:3px solid #FEBC11;gap:28px;padding-left:28px;margin-left:10px}
+.ctah{font-size:24px}
+.tl li{padding-top:0}
+.tl li::before{top:6px;left:-39px}
+.logos{grid-template-columns:repeat(3,minmax(0,1fr))}
+.people{grid-template-columns:repeat(2,minmax(0,1fr))}
+.people.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote{padding:32px 24px}
+.fair li{grid-template-columns:minmax(0,1fr);gap:4px}
+}
+@media (max-width:560px){
+.inc,.people,.people.four,.logos{grid-template-columns:minmax(0,1fr)}
+.logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+.res li{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="fp">
+<div style="background: #1A1A1A; color: #E9E9E9; font-size: 13px;">
+<div class="wrap" style="display: flex; justify-content: flex-end; gap: 24px; padding-block: 8px; flex-wrap: wrap;">
+<span>info@fairco.ca</span><span>(844) 210-8904</span><span>Instagram</span>
+</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 3px solid #FEBC11;">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; padding-block: 12px; gap: 24px;">
+<a href="homepage-refresh.html" style="display: block;"><img src="images/logo-landscape-group.png" alt="Fairco Landscape Group" style="height: 66px; width: auto; display: block;"></a>
+<nav class="navlinks" aria-label="Main"><a href="homepage-refresh.html">Home</a><a href="homepage-refresh.html#our-story">Our Story</a><a href="refresh-landscape-development.html">Landscape Development</a><a href="refresh-landscape-management.html" class="on" aria-current="page">Landscape Management</a><a href="#">Meet Our Team</a><a href="#">Careers</a><a href="#">Contact Us</a></nav>
+<button class="menu" type="button" aria-label="Open menu">Menu</button>
+</div>
+</div>
+<div style="position: relative; overflow: hidden; background: #1A1A1A;">
+<img src="images/mgmt-band.jpg" alt="A green community park with mature trees and walking paths" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+<div style="position: absolute; inset: 0; background: rgba(0,0,0,.5);"></div>
+<div class="wrap" style="position: relative; padding-block: 88px 96px; display: flex; flex-direction: column; gap: 22px; color: #FFFFFF;">
+<div class="crumbs"><a href="homepage-refresh.html">Home</a><span aria-hidden="true">›</span><span style="color: #FFFFFF;">Landscape Management</span></div>
+<h1 style="color: #FFFFFF; font-weight: 500; font-size: clamp(34px, 4.6vw, 52px); line-height: 1.15; max-width: 820px;">The team that builds it knows how to maintain it.</h1>
+<p style="font-weight: 700; font-size: 18px; max-width: 680px;">Recurring landscape care for HOAs, commercial properties and developers across Arizona, California and Nevada.</p>
+<div><a class="btn" href="#">Talk to our team</a></div>
+</div>
+</div>
+<div style="background: #F2F2F2;">
+<div class="wrap" style="padding-block: 96px;">
+<div class="split">
+<div class="imgcol"><img src="images/maint-list.jpg" alt="A neighborhood park lawn with palo verde trees, a saguaro and shaded picnic tables"></div>
+<div class="overcard ol-left">
+<h2 style="font-size: 34px;">Managed like we own it</h2>
+<div class="tline"></div>
+<p>You have enough on your plate. Fairco has built landscapes since 1978, and we manage them the way an owner would: as an asset with a value to protect and a plan that runs years ahead.</p>
+<p>We treat the landscape as one system: the turf, the trees and the water that feeds them. Regular inspections, a written plan and the same crew week after week mean needs get caught early, and you hear about them before they cost money.</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #FFFFFF;">
+<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 56px;">
+<div class="head">
+<h2 style="font-size: 36px;">Our services</h2>
+<div class="tline"></div>
+<p>Five services and one accountable team. Each one is available on its own, and they work best together.</p>
+</div>
+<div class="stack">
+<div class="split">
+<div class="imgcol"><img src="images/maint-hero.jpg" alt="Mesquite trees shading a curving path and a green lawn in a neighborhood park"></div>
+<div class="overcard ol-left">
+<h3 id="maintenance" style="font-size: 32px; line-height: 1.2;">Landscape Maintenance</h3>
+<div class="tline"></div>
+<p class="tag">See what we see.</p>
+<p>You shouldn't discover a landscape problem before we do. Fairco documents conditions, communicates priorities and gives property managers and boards the information they need to make decisions. Our program follows Sustainable Landscape Management (SLM) standards, as recommended by the Arizona Landscape Contractors Association.</p>
+<ul class="inc"><li>Site inspections with QR code verification</li><li>Turf, plant &amp; bed care</li><li>Irrigation management &amp; repairs</li><li>Fertilization, weed &amp; pest management</li><li>Seasonal planning</li><li>Enhancement recommendations</li><li>App-based reporting</li><li>Long-term landscape planning</li></ul>
+</div>
+</div>
+<div class="split rev">
+<div class="overcard ol-right">
+<h3 id="arbor" style="font-size: 32px; line-height: 1.2;">Arbor Resources</h3>
+<div class="tline"></div>
+<p class="tag">Your trees are an asset. Care for them that way.</p>
+<p>ISA Certified Arborists direct every tree job, and the work follows ANSI A300 pruning standards. We build a GIS-based inventory of every tree, prune each species in its correct season and assess risk using the ISA Tree Risk Assessment method.</p>
+<ul class="inc"><li>Tree inventories &amp; assessments</li><li>Structural &amp; young-tree pruning</li><li>Tree risk assessment (TRAQ)</li><li>Tree removal</li><li>Cabling &amp; bracing</li><li>Monsoon preparedness</li><li>Storm-damage cleanup</li><li>Multi-year plans &amp; budget forecasting</li></ul>
+</div>
+<div class="imgcol"><img src="images/arbor-truck-wide.jpg" alt="The side of a white Fairco Arbor Resources truck showing the palm icon and gold stripe"></div>
+</div>
+<div class="split">
+<div class="imgcol"><img src="images/phc-hero.jpg" alt="A healthy palo verde tree beside a shaded seating area and lawn"></div>
+<div class="overcard ol-left">
+<h3 id="phc" style="font-size: 32px; line-height: 1.2;">Plant Health Care (PHC)</h3>
+<div class="tline"></div>
+<p class="tag">The right work, at the right time, for the right reason.</p>
+<p>Healthy plants are the result of someone paying attention. Our program leads with Integrated Pest Management: monitoring, cultural and mechanical controls and biological options first, with targeted, correctly labeled treatment only where it's warranted. Seasonal soil testing sets fertilization rates and product selection.</p>
+<ul class="inc"><li>Soil &amp; root-zone evaluation</li><li>Fertilization &amp; soil health</li><li>Insect &amp; disease identification</li><li>Insect &amp; disease management</li><li>Systemic treatments &amp; trunk injections</li><li>Pre- &amp; post-emergent programs</li><li>Tree health monitoring</li></ul>
+</div>
+</div>
+<div class="split rev">
+<div class="overcard ol-right">
+<h3 id="water" style="font-size: 32px; line-height: 1.2;">Irrigation &amp; Water Management</h3>
+<div class="tline"></div>
+<p class="tag">Manage the water. Improve the landscape.</p>
+<p>Water is one of the biggest lines in a landscape budget, and the one with the most room to move. We audit the system, build a month-by-month water budget from historical evapotranspiration and set run times from real-time ET, replacing what the landscape loses. Water Management is available on its own or as part of a Landscape Management contract.</p>
+<ul class="inc"><li>Initial water audit</li><li>Water budgeting</li><li>Historical &amp; real-time ET management</li><li>ADWR schedule compliance</li><li>Controller programming &amp; management</li><li>Smart controllers &amp; 2-wire systems</li><li>Flow sensors &amp; master valves</li><li>Leak &amp; water-waste identification</li><li>Conservation &amp; conversion recommendations</li><li>Certified Water Auditor oversight</li></ul>
+</div>
+<div class="imgcol"><img src="images/water-hero.jpg" alt="A green turf area edged by desert planting, with a rocky mountain behind"></div>
+</div>
+<div class="split">
+<div class="imgcol"><img src="images/enh-hero.jpg" alt="A park shade structure with a rusted steel roof, desert planting and mountains behind"></div>
+<div class="overcard ol-left">
+<h3 id="enhancements" style="font-size: 32px; line-height: 1.2;">Landscape Enhancements</h3>
+<div class="tline"></div>
+<p class="tag">Strategic enhancements. Lasting landscape value.</p>
+<p>Because we manage the property as a connected system, our recommendations weigh more than appearance: water use, infrastructure, site structures, horticultural performance, maintenance requirements, lifecycle cost and your long-term goals.</p>
+<ul class="inc"><li>Landscape &amp; planting renovations</li><li>Turf reductions &amp; conversions</li><li>Tree replacement programs</li><li>Irrigation modernization</li><li>Smart controller upgrades</li><li>Granite &amp; rock refresh</li><li>Entry &amp; monument improvements</li><li>Amenities &amp; site structures</li><li>Water conservation projects</li><li>Capital planning</li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #F2F2F2;">
+<div class="wrap" style="padding-block: 96px;">
+<div class="two">
+<div class="col">
+<h2 style="font-size: 34px;">You'll know the work got done</h2>
+<div class="tline"></div>
+<p>Most maintenance headaches start the same way: nobody's sure what got done, or when. Fairco documents the work as it happens and reports on a set schedule. Our goal is to have the detail reports in your hands before board meetings and resident updates.</p>
+</div>
+<ul class="comm" style="grid-template-columns: minmax(0,1fr);"><li><h3>Daily communication</h3><p>A reliable daily touchpoint with your on-site supervisor and account manager, so issues are resolved at the right level.</p></li><li><h3>Transparent reporting</h3><p>Reports on a set schedule, with completed, ongoing and upcoming work clearly noted.</p></li><li><h3>QR code verification</h3><p>Tagged locations let your staff scan a code and check inspection details and service history.</p></li><li><h3>Proactive updates</h3><p>You hear about conditions and upcoming needs from us first, before they become problems.</p></li></ul>
+</div>
+</div>
+</div>
+<div style="background: #FFFFFF;">
+<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 44px;">
+<div class="head">
+<h2 style="font-size: 36px;">Who leads it</h2>
+<div class="tline"></div>
+<p>The people behind Landscape Management have run maintenance, water and tree programs at scale.</p>
+</div>
+<div class="people four"><div class="person"><img src="images/head-robert-clinkenbeard.jpg" alt="Portrait of Robert Clinkenbeard"><div class="txt"><h3>Robert Clinkenbeard</h3><span class="ttl">COO, Strategic Growth Partner</span><p>Built a landscape maintenance business to more than 500 accounts, along with a multi-million-dollar tree division.</p></div></div><div class="person"><img src="images/head-jayson-gonzales.jpg" alt="Portrait of Jayson Gonzales"><div class="txt"><h3>Jayson Gonzales</h3><span class="ttl">President, Landscape Management</span><p>Leads Landscape Management, with experience across master-planned HOA maintenance and enhancements.</p></div></div><div class="person"><img src="images/head-nathaniel-archambeau.jpg" alt="Portrait of Nathaniel Archambeau"><div class="txt"><h3>Nathaniel Archambeau</h3><span class="ttl">EVP, Landscape Management</span><p>ISA Certified Arborist, ACLP, ACIT and SLM. Leads the irrigation and water management program.</p></div></div><div class="person"><img src="images/head-fitu-perry.jpg" alt="Portrait of Fitu Perry"><div class="txt"><h3>Fitu Perry</h3><span class="ttl">Arbor Resources &amp; Plant Health Care Manager</span><p>ISA Certified Arborist since 1995 and Tree Risk Assessment Qualified, with more than 30 years across Arizona, Texas and Nevada.</p></div></div></div>
+</div>
+</div>
+<div style="background: #F2F2F2;">
+<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 44px;">
+<div class="head">
+<h2 style="font-size: 36px;">Educational resources</h2>
+<div class="tline"></div>
+<p>The guides our crews work from, shared with the boards and managers we work for.</p>
+</div>
+<ul class="res" style="max-width: 920px; width: 100%; margin: 0 auto;"><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Sustainable Landscape Management (SLM)</span><span class="s">Arizona Landscape Contractors Association</span></div><a href="#">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">ALCA Plant Pruning Schedule</span><span class="s">Arizona Landscape Contractors Association</span></div><a href="#">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Pruning Shrubs in the Low and Mid-Elevation Deserts in Arizona (AZ1499)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://www.extension.arizona.edu/publication/pruning-shrubs-low-and-mid-elevation-deserts-arizona" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Mowing Turfgrasses in the Desert (AZ1681)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://extension.arizona.edu/publication/mowing-turfgrasses-desert" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Overseeding Winter Grasses into Bermudagrass Turf (AZ1683)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://extension.arizona.edu/publication/overseeding-winter-grasses-bermudagrass-turf" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Basics of Evaporation and Evapotranspiration (AZ1194)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://www.extension.arizona.edu/publication/basics-evaporation-and-evapotranspiration" target="_blank" rel="noopener">View guide</a></li></ul>
+</div>
+</div>
+<div style="background: #F2F2F2;">
+<div class="wrap" style="padding-block: 0px 96px;">
+<div style="background: #FEBC11; padding: 44px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px;">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 680px; min-width: 0;">
+<h2 class="ctah">Let's talk about your property</h2>
+<p style="color: #2A2100;">Tell us about the property. We'll walk it, tell you what we see, and put a plan and a number in writing.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
+<a class="btn ghost" href="#">Request a call</a>
+<span style="font-weight: 700;">(844) 210-8904</span>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #1A1A1A; color: #E9E9E9;">
+<div class="wrap" style="padding-block: 72px 40px; display: flex; flex-direction: column; gap: 48px;">
+<div class="fcols">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<img src="images/refresh-logo-reversed.png" alt="Fairco Landscape Group" style="height: 84px; width: auto; display: block; align-self: flex-start;">
+<p style="font-size: 16px; color: #E9E9E9; max-width: 300px;">We live in and around the communities we build and care for. That makes the work personal.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
+<h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Company</h4>
+<a href="homepage-refresh.html">Home</a><a href="homepage-refresh.html#our-story">Our Story</a><a href="#">Meet Our Team</a><a href="#">Careers</a><a href="#">Contact Us</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
+<h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Divisions</h4>
+<a href="refresh-landscape-development.html">Landscape Development</a><a href="refresh-landscape-management.html">Landscape Management</a>
+<a class="sub" href="refresh-landscape-management.html#maintenance">Landscape Maintenance</a><a class="sub" href="refresh-landscape-management.html#arbor">Arbor Resources</a><a class="sub" href="refresh-landscape-management.html#phc">Plant Health Care</a><a class="sub" href="refresh-landscape-management.html#water">Irrigation &amp; Water Management</a><a class="sub" href="refresh-landscape-management.html#enhancements">Landscape Enhancements</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 1.5;">
+<h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Contact</h4>
+<span><strong style="color: #FEBC11;">Corporate:</strong> 4650 E Cotton Center Blvd Suite 140, Phoenix, AZ 85040</span>
+<span><strong style="color: #FEBC11;">Operations Center:</strong> 7802 N. Alsup Road, Litchfield Park, AZ 85340</span>
+<span><strong style="color: #FEBC11;">California:</strong> 9474 Chesapeake Dr., Ste 901, San Diego, CA 92123</span>
+<span>(844) 210-8904</span>
+</div>
+</div>
+<div style="border-top: 1px solid #333333; padding-top: 20px; font-size: 13px; color: #BDBDBD;">Copyright © 2026 Fairco Landscape Group | All Rights Reserved</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Landscape Development | Fairco Landscape Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&amp;family=Poppins:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F2F2F2}
+a{color:#0D0D0D}a:hover{color:#5A4300}
+a:focus-visible,button:focus-visible{outline:3px solid #0D0D0D;outline-offset:3px}
+*{box-sizing:border-box}
+img{max-width:100%}
+.fp{font-family:Lato,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.5;letter-spacing:.3px;color:#0D0D0D;background:#FFFFFF}
+.fp h1,.fp h2,.fp h3,.fp h4{font-family:Poppins,"Helvetica Neue",Arial,sans-serif;font-weight:400;color:#020001;margin:0;text-wrap:balance}
+.fp p{margin:0}
+.fp ul{margin:0;padding:0;list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#FEBC11;color:#0D0D0D;font-weight:700;font-size:16px;text-decoration:none;padding:13px 26px;border-radius:3px;min-height:44px}
+.btn:hover{background:#E5A800;color:#0D0D0D}
+.btn.ghost{background:#FFFFFF;border:1px solid #0D0D0D}
+.btn.ghost:hover{background:#0D0D0D;color:#FFFFFF}
+.tline{width:56px;height:3px;background:#FEBC11}
+.ctah{font-size:30px;line-height:1.25}
+.head{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.head p{max-width:700px}
+.navlinks{display:flex;gap:26px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.navlinks a{text-decoration:none;font-family:Poppins,Arial,sans-serif;font-size:15px;color:#0D0D0D;padding-block:6px;border-bottom:2px solid transparent}
+.navlinks a:hover{border-bottom-color:#FEBC11}
+.navlinks a.on{border-bottom-color:#FEBC11;font-weight:500}
+.menu{display:none;align-items:center;gap:8px;background:#FFFFFF;border:1px solid #0D0D0D;border-radius:3px;font:700 15px Lato,Arial,sans-serif;padding:10px 16px;min-height:44px;color:#0D0D0D}
+.crumbs{display:flex;gap:10px;align-items:center;font-size:15px;color:#FFFFFF}
+.crumbs a{color:#FFFFFF;text-decoration:none}
+.crumbs span{color:#FEBC11}
+.split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
+.split.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+.split img{width:100%;height:560px;object-fit:cover;display:block}
+.overcard{background:#FFFFFF;padding:52px;box-shadow:0 4px 24px rgba(0,0,0,.08);display:flex;flex-direction:column;gap:20px;min-width:0}
+.ol-left{margin-left:-110px}
+.ol-right{margin-right:-110px;position:relative;z-index:2}
+.stack{display:flex;flex-direction:column;gap:80px}
+.inl a{color:#0D0D0D;font-weight:700;text-decoration:underline;text-decoration-color:#FEBC11;text-decoration-thickness:2px;text-underline-offset:4px}
+.inl a:hover{color:#5A4300;text-decoration-color:#0D0D0D}
+.band{position:relative;width:100%;max-width:1440px;margin:0 auto}
+.band img{width:100%;height:640px;object-fit:cover;display:block}
+.band .bcard{position:absolute;top:50%;transform:translateY(-50%);width:min(500px,44%);background:#FFFFFF;padding:52px;display:flex;flex-direction:column;gap:20px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
+.band.l .bcard{left:max(24px,calc(50% - 590px))}
+.band.r .bcard{right:max(24px,calc(50% - 590px))}
+.tl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;border-top:3px solid #FEBC11;padding-top:0}
+.tl li{position:relative;padding-top:34px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.tl li::before{content:"";position:absolute;top:-10px;left:0;width:17px;height:17px;border-radius:50%;background:#FEBC11;border:3px solid #FFFFFF;box-shadow:0 0 0 1px #E5A800}
+.tl .yr{font-family:Poppins,Arial,sans-serif;font-size:34px;line-height:1;font-weight:500}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px}
+.col{display:flex;flex-direction:column;gap:18px;min-width:0}
+.fair li{display:grid;grid-template-columns:140px minmax(0,1fr);gap:16px;padding-block:14px;border-top:1px solid #DDD6C3}
+.fair li strong{font-family:Poppins,Arial,sans-serif;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.stat{display:flex;flex-direction:column;gap:6px;border-left:1px solid #3A3A3A;padding-left:22px}
+.stat b{font-family:Poppins,Arial,sans-serif;font-weight:400;font-size:38px;white-space:nowrap;color:#FEBC11;line-height:1;font-variant-numeric:tabular-nums}
+.svclist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px}
+.svclist li{border-top:1px solid #DDD6C3;padding-block:22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.svclist h3{font-size:20px}
+.curr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.curr article{background:#FFFFFF;display:flex;flex-direction:column;min-width:0}
+.curr img,.curr .ph{width:100%;height:380px;object-fit:cover}
+.curr img{display:block}
+.curr .txt{padding:32px;display:flex;flex-direction:column;gap:10px}
+.meta{font-size:14px;font-weight:700;letter-spacing:.6px;color:#6E5300}
+.ph{background:#E6E0CF;display:flex;align-items:center;justify-content:center;color:#5E5440;font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-align:center;padding:16px}
+.proj{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.pcard{position:relative;height:400px;overflow:hidden}
+.pcard img{width:100%;height:100%;object-fit:cover;display:block}
+.pcard .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.8) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:28px;gap:6px;color:#FFFFFF}
+.pcard h3{color:#FFFFFF;font-size:22px}
+.pcard .loc{font-size:14px;font-weight:700;color:#FEBC11;letter-spacing:.4px}
+.people{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.people.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.person{background:#F2F2F2;display:flex;flex-direction:column;min-width:0}
+.person img,.person .ph{width:100%;aspect-ratio:1/1;height:auto;object-fit:cover}
+.person img{display:block}
+.person .txt{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px}
+.person h3{font-size:20px}
+.person .ttl{font-size:14px;font-weight:700;color:#6E5300}
+.person p{font-size:15px}
+.quote{background:#F2F2F2;padding:48px 56px;display:flex;flex-direction:column;gap:20px}
+.quote p.q{font-style:italic;font-size:19px;line-height:1.65}
+.inc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.inc li{border-top:1px solid #DDD6C3;padding-block:9px;font-size:15px}
+.tag{font-family:Poppins,Arial,sans-serif;font-size:18px;font-weight:500;color:#3A3A3A}
+.comm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px}
+.comm li{border-top:1px solid #DDD6C3;padding-block:22px;display:flex;flex-direction:column;gap:6px}
+.comm h3{font-size:20px}
+.res li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;border-top:1px solid #DDD6C3;padding-block:18px}
+.res li:last-child{border-bottom:1px solid #DDD6C3}
+.res .t{font-weight:700;font-size:17px}
+.res .s{font-size:15px;color:#4A4A4A}
+.res a{font-weight:700;white-space:nowrap;text-decoration:underline;text-decoration-color:#FEBC11;text-decoration-thickness:2px;text-underline-offset:4px;color:#0D0D0D}
+.logos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.logo{height:96px;background:#FFFFFF;border:1px solid #E7E7E7;display:flex;align-items:center;justify-content:center;padding:0 8px}
+.fcols{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:40px}
+.fcols a{color:#E9E9E9;text-decoration:none}
+.fcols a:hover{color:#FEBC11}
+.fcols a.sub{padding-left:14px;font-size:14px;color:#C9C9C9}
+@media (max-width:1100px){.navlinks{display:none}.menu{display:inline-flex}}
+@media (max-width:900px){
+.split,.split.rev,.stats,.two,.svclist,.curr,.proj,.people,.people.four,.fcols,.comm{grid-template-columns:minmax(0,1fr)}
+.split.rev .imgcol{order:-1}
+.split img{height:320px}
+.ol-left,.ol-right{margin:-60px 16px 0}
+.overcard,.band .bcard{padding:30px 24px}
+.band img{height:340px}
+.band .bcard{position:relative;top:auto;transform:none;width:auto;left:auto!important;right:auto!important;margin:-60px 16px 0}
+.tl{grid-template-columns:minmax(0,1fr);border-top:0;border-left:3px solid #FEBC11;gap:28px;padding-left:28px;margin-left:10px}
+.ctah{font-size:24px}
+.tl li{padding-top:0}
+.tl li::before{top:6px;left:-39px}
+.logos{grid-template-columns:repeat(3,minmax(0,1fr))}
+.people{grid-template-columns:repeat(2,minmax(0,1fr))}
+.people.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote{padding:32px 24px}
+.fair li{grid-template-columns:minmax(0,1fr);gap:4px}
+}
+@media (max-width:560px){
+.inc,.people,.people.four,.logos{grid-template-columns:minmax(0,1fr)}
+.logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+.res li{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="fp">
+<div style="background: #1A1A1A; color: #E9E9E9; font-size: 13px;">
+<div class="wrap" style="display: flex; justify-content: flex-end; gap: 24px; padding-block: 8px; flex-wrap: wrap;">
+<span>info@fairco.ca</span><span>(844) 210-8904</span><span>Instagram</span>
+</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 3px solid #FEBC11;">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; padding-block: 12px; gap: 24px;">
+<a href="homepage-refresh.html" style="display: block;"><img src="images/logo-landscape-group.png" alt="Fairco Landscape Group" style="height: 66px; width: auto; display: block;"></a>
+<nav class="navlinks" aria-label="Main"><a href="homepage-refresh.html">Home</a><a href="homepage-refresh.html#our-story">Our Story</a><a href="refresh-landscape-development.html" class="on" aria-current="page">Landscape Development</a><a href="refresh-landscape-management.html">Landscape Management</a><a href="#">Meet Our Team</a><a href="#">Careers</a><a href="#">Contact Us</a></nav>
+<button class="menu" type="button" aria-label="Open menu">Menu</button>
+</div>
+</div>
+<div style="position: relative; overflow: hidden; background: #1A1A1A;">
+<img src="images/dev-hero.jpg" alt="A Fairco loader working a graded site beside newly set desert trees" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+<div style="position: absolute; inset: 0; background: rgba(0,0,0,.5);"></div>
+<div class="wrap" style="position: relative; padding-block: 88px 96px; display: flex; flex-direction: column; gap: 22px; color: #FFFFFF;">
+<div class="crumbs"><a href="homepage-refresh.html">Home</a><span aria-hidden="true">›</span><span style="color: #FFFFFF;">Landscape Development</span></div>
+<h1 style="color: #FFFFFF; font-weight: 500; font-size: clamp(34px, 4.6vw, 52px); line-height: 1.15; max-width: 820px;">We bring the master plan to life.</h1>
+<p style="font-weight: 700; font-size: 18px; max-width: 680px;">Landscape construction for developers and homebuilders across Arizona, California and Nevada, since 1978.</p>
+<div><a class="btn" href="#">Talk to our team</a></div>
+</div>
+</div>
+<div style="background: #F2F2F2;">
+<div class="wrap" style="padding-block: 96px;">
+<div class="split">
+<div class="imgcol"><img src="images/dev-partner.jpg" alt="A Fairco loader lifts a bucket of landscape rock beside a mature desert tree, with mountains behind"></div>
+<div class="overcard ol-left">
+<h2 style="font-size: 34px;">The same team from planning to closeout</h2>
+<div class="tline"></div>
+<p>Since 1978, Fairco has worked alongside real estate developers and homebuilders across Arizona, California and Nevada. That history gives our team a working knowledge of the challenges developers face, and practical ways to solve them.</p>
+<p>The team that bids the project is the team that builds it, from initial planning through construction and closeout. We self-perform the landscape and irrigation work with our own crews and equipment, and bring in trade partners we've worked with for more than 20 years for everything else.</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #FFFFFF;">
+<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 44px;">
+<div class="head">
+<h2 style="font-size: 36px;">Services</h2>
+<div class="tline"></div>
+<p>Everything a master-planned community, multifamily or commercial landscape needs, from the first site walk to final establishment.</p>
+</div>
+<ul class="svclist"><li><h3>Pre-Construction &amp; Project Management</h3><p>Submittals, approvals, a schedule with key milestones, and accurate estimates that put your budget where it matters and avoid surprises.</p></li><li><h3>Landscape Installation</h3><p>Trees, shrubs, ground covers, turf and native species, installed by our own crews from soil prep through final establishment.</p></li><li><h3>Irrigation Systems</h3><p>Main lines, laterals, drip, spray, rotors and smart controller integration, with full pump station installation capability.</p></li><li><h3>Lakes, Water Features &amp; Pump Stations</h3><p>Community lakes, detention basins, water features and pump stations, built to the engineer of record's plans.</p></li><li><h3>Native Plant Salvage</h3><p>Salvage programs that meet Maricopa County and City of Scottsdale requirements, from species inventory and GPS mapping through boxing, nursery care and replanting.</p></li><li><h3>Rock Work &amp; Material Processing</h3><p>On-site rock screening and crushing, plus DG, rip-rap and decorative rock supply and installation.</p></li><li><h3>Hardscape, Boulders &amp; Site Furnishings</h3><p>Boulder walls and decorative rock work, plus ramadas, shade structures, benches and other site amenities.</p></li><li><h3>Landscape Lighting &amp; Low-Voltage</h3><p>Landscape lighting, irrigation controls and related low-voltage systems, with line-voltage work through licensed trade partners.</p></li></ul>
+</div>
+</div>
+<div style="background: #F2F2F2;">
+<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 44px;">
+<div class="head">
+<h2 style="font-size: 36px;">Current projects</h2>
+<div class="tline"></div>
+</div>
+<div class="curr">
+<article>
+<img src="images/work-verrado.jpg" alt="Date palms lining a divided main street at Verrado">
+<div class="txt"><h3 style="font-size: 26px;">Verrado</h3><span class="meta">Buckeye, AZ · DMB</span><p>Fairco has worked at Verrado since the community's earliest phases, building streetscapes, community parks, trail systems and open space through a build-out that is still underway.</p></div>
+</article>
+<article>
+<div class="ph">Teravalis photo needed</div>
+<div class="txt"><h3 style="font-size: 26px;">Teravalis</h3><span class="meta">Buckeye, AZ · Howard Hughes</span><p>Fairco delivered the first three parcels and three community parks at Teravalis, including a contract grow program that kept plant material on pace with an aggressive early schedule.</p></div>
+</article>
+</div>
+</div>
+</div>
+<div style="background: #FFFFFF; padding-block: 96px 0; display: flex; flex-direction: column; gap: 44px;">
+<div class="wrap">
+<div class="head">
+<h2 style="font-size: 36px;">Portfolio</h2>
+<div class="tline"></div>
+<p>Completed work across master-planned communities, military housing, multifamily, and resort and commercial projects.</p>
+</div>
+</div>
+<div class="proj"><div class="pcard"><img src="images/proj-morrison.jpg" alt="The Lakeview Trails at Morrison Ranch entry monument with flowering planting"><div class="ov"><span class="loc">Gilbert, AZ</span><h3>Morrison Ranch</h3><p style="font-size: 16px;">Lakes, pump stations, community parks and walking paths.</p></div></div><div class="pcard"><img src="images/work-estrella.jpg" alt="The Estrella community entry monument with a water feature"><div class="ov"><span class="loc">Goodyear, AZ</span><h3>Estrella Mountain Ranch</h3><p style="font-size: 16px;">Full-scope landscape construction across multiple phases, with rock screened and crushed on site.</p></div></div><div class="pcard"><img src="images/proj-tsr.jpg" alt="The Talking Stick Resort hotel tower above desert landscape planting"><div class="ov"><span class="loc">Scottsdale, AZ</span><h3>Talking Stick Resort</h3><p style="font-size: 16px;">The complete landscape scope, including a signature boulder retaining wall.</p></div></div><div class="pcard"><img src="images/proj-sdmh.jpg" alt="Military family homes with lawns, flowering beds and palms"><div class="ov"><span class="loc">San Diego, CA</span><h3>San Diego Military Housing</h3><p style="font-size: 16px;">New landscape, irrigation and infrastructure for more than 6,000 homes.</p></div></div><div class="pcard"><img src="images/proj-fortord.jpg" alt="Aerial view of the Lower Stilwell neighborhood at Fort Ord"><div class="ov"><span class="loc">Monterey Bay, CA</span><h3>Fort Ord, Lower Stilwell</h3><p style="font-size: 16px;">Landscape infrastructure for more than 2,500 new and renovated homes.</p></div></div><div class="pcard"><img src="images/proj-oceanstreet.jpg" alt="The living wall and pool deck seating at Ocean Street Apartments"><div class="ov"><span class="loc">San Diego, CA</span><h3>Ocean Street Apartments</h3><p style="font-size: 16px;">Home of the Living Wall.</p></div></div><div class="pcard"><img src="images/proj-jefferson.jpg" alt="Sonoran Desert planting with saguaros at The Jefferson"><div class="ov"><span class="loc">Scottsdale, AZ</span><h3>The Jefferson</h3><p style="font-size: 16px;">Sonoran Desert landscape for a luxury apartment community.</p></div></div><div class="pcard"><img src="images/proj-rincon.jpg" alt="Aerial view of the pool and tropical planting at Rincon Casino Resort"><div class="ov"><span class="loc">Southern California</span><h3>Rincon Casino Resort</h3><p style="font-size: 16px;">A tropical landscape that turns the resort pool into an oasis.</p></div></div><div class="pcard"><img src="images/proj-fashionisland.jpg" alt="Palm trees and a fountain at the Fashion Island Marriott entry"><div class="ov"><span class="loc">Newport Beach, CA</span><h3>Fashion Island Marriott</h3><p style="font-size: 16px;">Palm trees featured throughout the landscape.</p></div></div></div>
+<div class="wrap" style="display: flex; justify-content: center; padding-block: 8px 0;"><a class="btn ghost" href="#">See all notable projects</a></div>
+</div>
+<div style="background: #FFFFFF;">
+<div class="wrap" style="padding-block: 96px; display: flex; flex-direction: column; gap: 44px;">
+<div class="head">
+<h2 style="font-size: 36px;">Meet the development team</h2>
+<div class="tline"></div>
+<p>Frank Tunnell has run Fairco's construction operations in Arizona since 2003, with more than 20 years each at Verrado and Morrison Ranch, plus Teravalis, Estrella Mountain Ranch and Talking Stick Resort.</p>
+</div>
+<div class="people"><div class="person"><img src="images/head-frank-tunnell.jpg" alt="Portrait of Frank Tunnell"><div class="txt"><h3>Frank Tunnell</h3><span class="ttl">President, Landscape Development</span></div></div><div class="person"><div class="ph">Headshot</div><div class="txt"><h3>Tavia Olive</h3><span class="ttl">VP of Pre-Construction</span></div></div><div class="person"><div class="ph">Headshot</div><div class="txt"><h3>West Tunnell</h3><span class="ttl">Business Development</span></div></div></div>
+</div>
+</div>
+<div style="background: #FFFFFF;">
+<div class="wrap" style="padding-block: 0 24px; display: flex; flex-direction: column; gap: 28px;">
+<h2 style="font-size: 34px;">Client testimonials</h2>
+<div class="quote">
+<p class="q">The FAIRCO team, whether on-site or office personnel, has been a pleasure to work with. From the bid process to the execution in the field, FAIRCO delivers on all phases through commitment, dedication and problem solving. Their General Superintendent is very knowledgeable of the projects and always responsive to our needs and deadlines. The entire team tactfully and professionally delivers our projects with exceptional quality while staying committed to the budget and schedule. We will not hesitate to work with FAIRCO in the future!</p>
+<span style="font-weight: 700;">Silver Fern Companies / Otago Development</span>
+</div>
+</div>
+</div>
+<div style="background: #1A1A1A; color: #F4F4F4; margin-top: 72px;">
+<div class="wrap" style="padding-block: 64px;">
+<div class="stats"><div class="stat"><b>1978</b><span style="font-size: 15px;">Family-owned since</span></div><div class="stat"><b>0.66</b><span style="font-size: 15px;">EMR vs. 1.0 industry standard</span></div><div class="stat"><b>Zero</b><span style="font-size: 15px;">OSHA recordables, 2019–2024</span></div><div class="stat"><b>AZ · CA · NV</b><span style="font-size: 15px;">Where we work</span></div></div>
+</div>
+</div>
+<div style="background: #FFFFFF;">
+<div class="wrap" style="padding-block: 96px 96px;">
+<div style="background: #FEBC11; padding: 44px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px;">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 680px; min-width: 0;">
+<h2 class="ctah">Planning a new community, or the next phase of one?</h2>
+<p style="color: #2A2100;">Tell us about the project and we'll put the development team on it.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
+<a class="btn ghost" href="#">Contact Us</a>
+<span style="font-weight: 700;">(844) 210-8904</span>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #1A1A1A; color: #E9E9E9;">
+<div class="wrap" style="padding-block: 72px 40px; display: flex; flex-direction: column; gap: 48px;">
+<div class="fcols">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<img src="images/refresh-logo-reversed.png" alt="Fairco Landscape Group" style="height: 84px; width: auto; display: block; align-self: flex-start;">
+<p style="font-size: 16px; color: #E9E9E9; max-width: 300px;">We live in and around the communities we build and care for. That makes the work personal.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
+<h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Company</h4>
+<a href="homepage-refresh.html">Home</a><a href="homepage-refresh.html#our-story">Our Story</a><a href="#">Meet Our Team</a><a href="#">Careers</a><a href="#">Contact Us</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
+<h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Divisions</h4>
+<a href="refresh-landscape-development.html">Landscape Development</a><a href="refresh-landscape-management.html">Landscape Management</a>
+<a class="sub" href="refresh-landscape-management.html#maintenance">Landscape Maintenance</a><a class="sub" href="refresh-landscape-management.html#arbor">Arbor Resources</a><a class="sub" href="refresh-landscape-management.html#phc">Plant Health Care</a><a class="sub" href="refresh-landscape-management.html#water">Irrigation &amp; Water Management</a><a class="sub" href="refresh-landscape-management.html#enhancements">Landscape Enhancements</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 1.5;">
+<h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Contact</h4>
+<span><strong style="color: #FEBC11;">Corporate:</strong> 4650 E Cotton Center Blvd Suite 140, Phoenix, AZ 85040</span>
+<span><strong style="color: #FEBC11;">Operations Center:</strong> 7802 N. Alsup Road, Litchfield Park, AZ 85340</span>
+<span><strong style="color: #FEBC11;">California:</strong> 9474 Chesapeake Dr., Ste 901, San Diego, CA 92123</span>
+<span>(844) 210-8904</span>
+</div>
+</div>
+<div style="border-top: 1px solid #333333; padding-top: 20px; font-size: 13px; color: #BDBDBD;">Copyright © 2026 Fairco Landscape Group | All Rights Reserved</div>
+</div>
+</div>
+</div>
+</body>
+</html>
