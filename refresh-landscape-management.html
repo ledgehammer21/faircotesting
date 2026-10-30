@@ -34,6 +34,7 @@ img{max-width:100%}
 .crumbs{display:flex;gap:10px;align-items:center;font-size:15px;color:#FFFFFF}
 .crumbs a{color:#FFFFFF;text-decoration:none}
 .crumbs span{color:#FEBC11}
+.split[id]{scroll-margin-top:24px}
 .split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
 .split.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
 .split img{width:100%;height:560px;object-fit:cover;display:block}
@@ -172,7 +173,7 @@ img{max-width:100%}
 <div style="position: absolute; inset: 0; background: rgba(0,0,0,.5);"></div>
 <div class="wrap" style="position: relative; padding-block: 88px 96px; display: flex; flex-direction: column; gap: 22px; color: #FFFFFF;">
 <div class="crumbs"><a href="homepage-refresh.html">Home</a><span aria-hidden="true">›</span><span style="color: #FFFFFF;">Landscape Management</span></div>
-<h1 style="color: #FFFFFF; font-weight: 500; font-size: clamp(34px, 4.6vw, 52px); line-height: 1.15; max-width: 820px;">The team that builds it knows how to maintain it.</h1>
+<h1 style="color: #FFFFFF; font-weight: 500; font-size: clamp(34px, 4.6vw, 52px); line-height: 1.15; max-width: 820px;">Managed like we own it.</h1>
 <p style="font-weight: 700; font-size: 18px; max-width: 680px;">Recurring landscape care for HOAs, commercial properties and developers across Arizona, California and Nevada.</p>
 <div><a class="btn" href="#">Talk to our team</a></div>
 </div>
@@ -182,7 +183,7 @@ img{max-width:100%}
 <div class="split">
 <div class="imgcol"><img src="images/maint-list.jpg" alt="A neighborhood park lawn with palo verde trees, a saguaro and shaded picnic tables"></div>
 <div class="overcard ol-left">
-<h2 style="font-size: 34px;">Managed like we own it</h2>
+<h2 style="font-size: 34px;">How we look after a property</h2>
 <div class="tline"></div>
 <p>You have enough on your plate. Fairco has built landscapes since 1978, and we manage them the way an owner would: as an asset with a value to protect and a plan that runs years ahead.</p>
 <p>We treat the landscape as one system: the turf, the trees and the water that feeds them. Regular inspections, a written plan and the same crew week after week mean needs get caught early, and you hear about them before they cost money.</p>
@@ -198,19 +199,19 @@ img{max-width:100%}
 <p>Five services and one accountable team. Each one is available on its own, and they work best together.</p>
 </div>
 <div class="stack">
-<div class="split">
+<div class="split" id="maintenance">
 <div class="imgcol"><img src="images/maint-hero.jpg" alt="Mesquite trees shading a curving path and a green lawn in a neighborhood park"></div>
 <div class="overcard ol-left">
-<h3 id="maintenance" style="font-size: 32px; line-height: 1.2;">Landscape Maintenance</h3>
+<h3 style="font-size: 32px; line-height: 1.2;">Landscape Maintenance</h3>
 <div class="tline"></div>
 <p class="tag">See what we see.</p>
 <p>You shouldn't discover a landscape problem before we do. Fairco documents conditions, communicates priorities and gives property managers and boards the information they need to make decisions. Our program follows Sustainable Landscape Management (SLM) standards, as recommended by the Arizona Landscape Contractors Association.</p>
 <ul class="inc"><li>Site inspections with QR code verification</li><li>Turf, plant &amp; bed care</li><li>Irrigation management &amp; repairs</li><li>Fertilization, weed &amp; pest management</li><li>Seasonal planning</li><li>Enhancement recommendations</li><li>App-based reporting</li><li>Long-term landscape planning</li></ul>
 </div>
 </div>
-<div class="split rev">
+<div class="split rev" id="arbor">
 <div class="overcard ol-right">
-<h3 id="arbor" style="font-size: 32px; line-height: 1.2;">Arbor Resources</h3>
+<h3 style="font-size: 32px; line-height: 1.2;">Arbor Resources</h3>
 <div class="tline"></div>
 <p class="tag">Your trees are an asset. Care for them that way.</p>
 <p>ISA Certified Arborists direct every tree job, and the work follows ANSI A300 pruning standards. We build a GIS-based inventory of every tree, prune each species in its correct season and assess risk using the ISA Tree Risk Assessment method.</p>
@@ -218,19 +219,19 @@ img{max-width:100%}
 </div>
 <div class="imgcol"><img src="images/arbor-truck-wide.jpg" alt="The side of a white Fairco Arbor Resources truck showing the palm icon and gold stripe"></div>
 </div>
-<div class="split">
+<div class="split" id="phc">
 <div class="imgcol"><img src="images/phc-hero.jpg" alt="A healthy palo verde tree beside a shaded seating area and lawn"></div>
 <div class="overcard ol-left">
-<h3 id="phc" style="font-size: 32px; line-height: 1.2;">Plant Health Care (PHC)</h3>
+<h3 style="font-size: 32px; line-height: 1.2;">Plant Health Care (PHC)</h3>
 <div class="tline"></div>
 <p class="tag">The right work, at the right time, for the right reason.</p>
 <p>Healthy plants are the result of someone paying attention. Our program leads with Integrated Pest Management: monitoring, cultural and mechanical controls and biological options first, with targeted, correctly labeled treatment only where it's warranted. Seasonal soil testing sets fertilization rates and product selection.</p>
 <ul class="inc"><li>Soil &amp; root-zone evaluation</li><li>Fertilization &amp; soil health</li><li>Insect &amp; disease identification</li><li>Insect &amp; disease management</li><li>Systemic treatments &amp; trunk injections</li><li>Pre- &amp; post-emergent programs</li><li>Tree health monitoring</li></ul>
 </div>
 </div>
-<div class="split rev">
+<div class="split rev" id="water">
 <div class="overcard ol-right">
-<h3 id="water" style="font-size: 32px; line-height: 1.2;">Irrigation &amp; Water Management</h3>
+<h3 style="font-size: 32px; line-height: 1.2;">Irrigation &amp; Water Management</h3>
 <div class="tline"></div>
 <p class="tag">Manage the water. Improve the landscape.</p>
 <p>Water is one of the biggest lines in a landscape budget, and the one with the most room to move. We audit the system, build a month-by-month water budget from historical evapotranspiration and set run times from real-time ET, replacing what the landscape loses. Water Management is available on its own or as part of a Landscape Management contract.</p>
@@ -238,10 +239,10 @@ img{max-width:100%}
 </div>
 <div class="imgcol"><img src="images/water-hero.jpg" alt="A green turf area edged by desert planting, with a rocky mountain behind"></div>
 </div>
-<div class="split">
+<div class="split" id="enhancements">
 <div class="imgcol"><img src="images/enh-hero.jpg" alt="A park shade structure with a rusted steel roof, desert planting and mountains behind"></div>
 <div class="overcard ol-left">
-<h3 id="enhancements" style="font-size: 32px; line-height: 1.2;">Landscape Enhancements</h3>
+<h3 style="font-size: 32px; line-height: 1.2;">Landscape Enhancements</h3>
 <div class="tline"></div>
 <p class="tag">Strategic enhancements. Lasting landscape value.</p>
 <p>Because we manage the property as a connected system, our recommendations weigh more than appearance: water use, infrastructure, site structures, horticultural performance, maintenance requirements, lifecycle cost and your long-term goals.</p>
@@ -280,7 +281,7 @@ img{max-width:100%}
 <div class="tline"></div>
 <p>The guides our crews work from, shared with the boards and managers we work for.</p>
 </div>
-<ul class="res" style="max-width: 920px; width: 100%; margin: 0 auto;"><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Sustainable Landscape Management (SLM)</span><span class="s">Arizona Landscape Contractors Association</span></div><a href="#">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">ALCA Plant Pruning Schedule</span><span class="s">Arizona Landscape Contractors Association</span></div><a href="#">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Pruning Shrubs in the Low and Mid-Elevation Deserts in Arizona (AZ1499)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://www.extension.arizona.edu/publication/pruning-shrubs-low-and-mid-elevation-deserts-arizona" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Mowing Turfgrasses in the Desert (AZ1681)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://extension.arizona.edu/publication/mowing-turfgrasses-desert" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Overseeding Winter Grasses into Bermudagrass Turf (AZ1683)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://extension.arizona.edu/publication/overseeding-winter-grasses-bermudagrass-turf" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Basics of Evaporation and Evapotranspiration (AZ1194)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://www.extension.arizona.edu/publication/basics-evaporation-and-evapotranspiration" target="_blank" rel="noopener">View guide</a></li></ul>
+<ul class="res" style="max-width: 920px; width: 100%; margin: 0 auto;"><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Sustainable Landscape Management (SLM)</span><span class="s">Arizona Landscape Contractors Association</span></div><a href="https://alca.org/slm/" target="_blank" rel="noopener">About SLM</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">ALCA Plant Pruning Schedule</span><span class="s">Arizona Landscape Contractors Association (print book)</span></div><a href="https://alca.site-ym.com/store/viewproduct.aspx?id=25554321" target="_blank" rel="noopener">Get the book</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Pruning Shrubs in the Low and Mid-Elevation Deserts in Arizona (AZ1499)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://www.extension.arizona.edu/publication/pruning-shrubs-low-and-mid-elevation-deserts-arizona" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Mowing Turfgrasses in the Desert (AZ1681)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://extension.arizona.edu/publication/mowing-turfgrasses-desert" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Overseeding Winter Grasses into Bermudagrass Turf (AZ1683)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://extension.arizona.edu/publication/overseeding-winter-grasses-bermudagrass-turf" target="_blank" rel="noopener">View guide</a></li><li><div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;"><span class="t">Basics of Evaporation and Evapotranspiration (AZ1194)</span><span class="s">University of Arizona Cooperative Extension</span></div><a href="https://www.extension.arizona.edu/publication/basics-evaporation-and-evapotranspiration" target="_blank" rel="noopener">View guide</a></li></ul>
 </div>
 </div>
 <div style="background: #F2F2F2;">
