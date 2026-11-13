@@ -154,6 +154,28 @@ img{max-width:100%}
 .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
 .res li{grid-template-columns:minmax(0,1fr)}
 }
+.legal{display:flex;flex-wrap:wrap;gap:8px 22px}
+.legal a{color:#BDBDBD;text-decoration:none}
+.legal a:hover{color:#FEBC11}
+.news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.news article{background:#FFFFFF;display:flex;flex-direction:column;min-width:0}
+.news img{width:100%;height:240px;object-fit:cover;display:block}
+.news .txt{padding:28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.news h3{font-size:22px;line-height:1.3}
+.news .links{margin-top:auto;padding-top:10px;display:flex;flex-direction:column;gap:10px}
+.tlink{font-weight:700;color:#0D0D0D;text-decoration:underline;text-decoration-color:#FEBC11;text-decoration-thickness:2px;text-underline-offset:4px}
+.crumbs.dark,.crumbs.dark a{color:#0D0D0D}
+.crumbs.dark span:last-child{color:#0D0D0D}
+.post{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:64px;align-items:start}
+.post .body{display:flex;flex-direction:column;gap:22px;max-width:720px;min-width:0}
+.post .body p{font-size:18px;line-height:1.7}
+.post .aside{display:flex;flex-direction:column;gap:28px;min-width:0}
+.post .aside h4{font-size:18px}
+.post .aside .more{display:flex;flex-direction:column;gap:14px;border-top:1px solid #DDD6C3;padding-top:20px}
+.boiler{border-top:1px solid #DDD6C3;padding-top:24px;display:flex;flex-direction:column;gap:10px}
+.boiler p{font-size:16px !important;color:#4A4A4A}
+@media (max-width:1100px){.news{grid-template-columns:repeat(2,minmax(0,1fr))}.post{grid-template-columns:minmax(0,1fr) 280px;gap:40px}}
+@media (max-width:900px){.news,.post{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -239,7 +261,7 @@ img{max-width:100%}
 <div class="tline"></div>
 <p>Gene Bearinger founded Fairco in 1978 and still leads the company. Frank Tunnell has run Fairco's construction operations in Arizona since 2003, with more than 20 years each at Verrado and Morrison Ranch, plus Teravalis, Estrella Mountain Ranch and Talking Stick Resort.</p>
 </div>
-<div class="people four"><div class="person"><img src="images/head-gene-bearinger.jpg" alt="Portrait of Gene Bearinger"><div class="txt"><h3>Gene Bearinger</h3><span class="ttl">Founder &amp; CEO</span></div></div><div class="person"><img src="images/head-frank-tunnell.jpg" alt="Portrait of Frank Tunnell"><div class="txt"><h3>Frank Tunnell</h3><span class="ttl">President, Landscape Development</span></div></div><div class="person"><div class="ph">Headshot</div><div class="txt"><h3>Tavia Olive</h3><span class="ttl">VP of Pre-Construction</span></div></div><div class="person"><div class="ph">Headshot</div><div class="txt"><h3>West Tunnell</h3><span class="ttl">Business Development</span></div></div></div>
+<div class="people"><div class="person"><img src="images/head-gene-bearinger.jpg" alt="Portrait of Gene Bearinger"><div class="txt"><h3>Gene Bearinger</h3><span class="ttl">Founder &amp; CEO</span></div></div><div class="person"><img src="images/head-frank-tunnell.jpg" alt="Portrait of Frank Tunnell"><div class="txt"><h3>Frank Tunnell</h3><span class="ttl">President, Landscape Development</span></div></div><div class="person"><img src="images/head-west-tunnell.jpg" alt="Portrait of West Tunnell"><div class="txt"><h3>West Tunnell</h3><span class="ttl">Business Development</span></div></div></div>
 </div>
 </div>
 <div style="background: #FFFFFF;">
@@ -264,7 +286,7 @@ img{max-width:100%}
 <p style="color: #2A2100;">Tell us about the project and we'll put the development team on it.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
-<a class="btn dark" href="#">Get My Free Property Assessment</a>
+<a class="btn dark" href="https://api.leadconnectorhq.com/widget/form/0IlOD3Apzma2e3Qpis42">Get My Free Property Assessment</a>
 <a class="btn ghost" href="#">Contact Us</a>
 <span style="font-weight: 700;">(844) 210-8904</span>
 </div>
@@ -280,7 +302,7 @@ img{max-width:100%}
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
 <h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Company</h4>
-<a href="homepage-refresh.html">Home</a><a href="homepage-refresh.html#our-story">Our Story</a><a href="#">Meet Our Team</a><a href="#">Careers</a><a href="#">Contact Us</a>
+<a href="homepage-refresh.html">Home</a><a href="homepage-refresh.html#our-story">Our Story</a><a href="#">Meet Our Team</a><a href="#">Careers</a><a href="refresh-press.html">Press</a><a href="#">Contact Us</a>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
 <h4 style="color: #FFFFFF; font-size: 18px; margin-bottom: 6px;">Divisions</h4>
@@ -295,7 +317,7 @@ img{max-width:100%}
 <span>(844) 210-8904</span>
 </div>
 </div>
-<div style="border-top: 1px solid #333333; padding-top: 20px; font-size: 13px; color: #BDBDBD;">Copyright © 2026 Fairco Landscape Group | All Rights Reserved</div>
+<div style="border-top: 1px solid #333333; padding-top: 20px; font-size: 13px; color: #BDBDBD; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px;"><span>Copyright © 2026 Fairco Landscape Group | All Rights Reserved</span><span class="legal"><a href="https://legal.faircolg.com/privacy-policy">Privacy Policy</a><a href="https://legal.faircolg.com/sms-terms">SMS Terms</a><a href="https://legal.faircolg.com/site-evaluation">Free Site Evaluation</a></span></div>
 </div>
 </div>
 </div>
